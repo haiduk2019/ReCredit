@@ -1,0 +1,1 @@
+let navMain=document.querySelector(".js-main-nav"),navToggle=document.querySelector(".js-main-nav__toggle"),langMenu=document.querySelector(".js-lang-menu");navToggle.addEventListener("click",()=>{navToggle.classList.toggle("main-nav__toggle--active"),navMain.classList.toggle("main-nav--active"),langMenu.classList.toggle("lang-menu--active")});

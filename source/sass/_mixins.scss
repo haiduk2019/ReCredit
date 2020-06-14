@@ -1,0 +1,51 @@
+@mixin link-image($hover, $active) {
+  img {
+    cursor: pointer;
+
+    &:hover {
+      opacity: $hover;
+    }
+
+    &:focus {
+      opacity: $hover;
+    }
+
+    &:active {
+      opacity: $active;
+    }
+  }
+}
+
+@mixin font-Roboto($fsize, $lheight, $fweight: 400) {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: $fsize;
+  line-height: $lheight;
+  font-weight: $fweight;
+}
+
+@mixin font-Montserrat($fsize, $lheight, $fweight: 600) {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: $fsize;
+  line-height: $lheight;
+  font-weight: $fweight;
+}
+
+@mixin white-btn {
+  @include font-Roboto(16px, 16px, 500);
+  color: #262626;
+  padding: 13px 21px 16px 20px;
+  border: 1px solid #FFC200;
+  border-radius: 25px;
+  transition: 0.4s ease;
+
+  &:hover,
+  &:focus {
+    background-color: #FFC200;
+  }
+
+  &:active {
+    background-color: #585858;
+    border-color: #585858;
+    color: #FFFFFF;
+  }
+}

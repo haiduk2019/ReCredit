@@ -1,1 +1,214 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="x-ua-compatible" content="ie=edge"><title>ReCredit: главная</title><link rel="stylesheet" href="./css/style.min.css"></head><body><header class="page-header"><div class="page-header__wrapper"><!-- Обернет page-header__container и main-nav --><div class="page-header__container"><a class="page-header__logo"><img class="page-header__img" src="./img/logo.svg" width="208" height="43" alt="Логотип ReCredit"></a><div class="page-header__lang-menu lang-menu js-lang-menu"><div class="lang-menu__item lang-menu__item--active">Ru</div><div class="lang-menu__item">Ua</div></div></div><nav class="page-header__main-nav main-nav js-main-nav"><button class="main-nav__toggle js-main-nav__toggle" type="button" aria-label="Открыть"><span></span> <span></span> <span></span></button><ul class="main-nav__list user-list"><li class="user-list__item"><a href="personal-account.html" class="user-list__link">Личный кабинет</a></li></ul><ul class="main-nav__list site-list"><li class="site-list__item"><a href="get-loan.html" class="site-list__link">Получить кредит</a></li><li class="site-list__item"><a href="how-to-get-loan.html" class="site-list__link">Как получить кредит</a></li><li class="site-list__item"><a href="pay-loan.html" class="site-list__link">Оплатить кредит</a></li><li class="site-list__item"><a href="credit-products.html" class="site-list__link">Кредитные продукты</a></li><li class="site-list__item"><a href="stocks.html" class="site-list__link">Акции</a></li><li class="site-list__item"><a href="about-company.html" class="site-list__link">О компании</a></li><li class="site-list__item"><a href="contacts.html" class="site-list__link">Контакты</a></li><li class="site-list__item"><a href="reference-info.html" class="site-list__link">Справочная информация</a></li></ul></nav></div></header><script src="js/main-nav.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>ReCredit: главная</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <!-- Обернет page-header__container и main-nav -->
+      <div class="page-header__container">
+        <a class="page-header__logo">
+          <img class="page-header__img" src="./img/logo.svg" width="208" height="43" alt="Логотип ReCredit">
+        </a>
+        <div class="page-header__lang-menu lang-menu js-lang-menu">
+          <div class="lang-menu__item lang-menu__item--active">Ru</div>
+          <div class="lang-menu__item">Ua</div>
+        </div>
+
+      </div>
+
+      <nav class="page-header__main-nav main-nav js-main-nav">
+        <button class="main-nav__toggle js-main-nav__toggle" type="button" aria-label="Открыть">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a href="personal-account.html" class="user-list__link">
+              Личный кабинет
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="get-loan.html" class="site-list__link">
+              Получить кредит
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="how-to-get-loan.html" class="site-list__link">
+              Как получить кредит
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="pay-loan.html" class="site-list__link">
+              Оплатить кредит
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="credit-products.html" class="site-list__link">
+              Кредитные продукты
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="stocks.html" class="site-list__link">
+              Акции
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="about-company.html" class="site-list__link">
+              О компании
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="contacts.html" class="site-list__link">
+              Контакты
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="reference-info.html" class="site-list__link">
+              Справочная информация
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <section class="promo">
+      <div class="container">
+        <div class="promo__wrapper">
+          <section class="promo__features credit-features">
+            <h2 class="credit-features__title">
+              Кредиты<br>
+              <span>на любые цели</span><br>
+              до 100 000 грн.
+            </h2>
+            <ul class="credit-features__list">
+              <li class="credit-features__item">
+                Рефинансирование микро-займов
+              </li>
+              <li class="credit-features__item">
+                С досрочным погашением
+              </li>
+              <li class="credit-features__item">
+                Только паспорт и ИНН
+              </li>
+              <li class="credit-features__item">
+                На карту любого банка
+              </li>
+              <li class="credit-features__item">
+                Без скрытых платежей и страховок
+              </li>
+              <li class="credit-features__item">
+                Удобное погашение
+              </li>
+            </ul>
+          </section>
+          <section class="promo__range credit-range">
+
+
+            <div class="credit-range__nav credit-nav">
+              <ul class="credit-nav__list">
+                <li class="credit-nav__item">
+                  <a class="credit-nav_link" href="#">
+                    Пример расчета
+                  </a>
+                </li>
+                <li class="credit-nav__item">
+                  <a class="credit-nav_link" href="#">
+                    Паспорт кредита
+                  </a>
+                </li>
+                <li class="credit-nav__item">
+                  <a class="credit-nav_link" href="#">
+                    График платежей
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__container"></div> <!-- //for desktop blocks -->
+        <div class="page-footer__container">
+          <section class="page-footer__info footer-info">
+            <h3 class="footer-info__title footer-info__title--contacts">
+              Контакты
+            </h3>
+            <ul class="footer-info__list">
+              <li class="footer-info__item footer-info__item--phone">
+                <a href="tel:+308007575778" class="footer-info__phone">
+                  0 800 757-57-78 <br>
+                </a>
+                Бесплатно по Украине
+              </li>
+
+              <li class="footer-info__item">
+                <a href="mailto:info@creditservice.com.ua" class="footer-info__email">
+                  info@creditservice.com.ua
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="page-footer__info footer-info">
+            <h3 class="footer-info__title">
+              Режим работы
+            </h3>
+            <ul class="footer-info__list">
+              <li class="footer-info__item">
+                Пн-пт.: 9:00 — 18:00
+              </li>
+              <li class="footer-info__item">
+                Сб.: 9:00 — 17:00
+              </li>
+              <li class="footer-info__item">
+                Вс.: Выходной
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+    </div>
+    <div class="page-footer__copyright">
+      <div class="container">
+        <p class="page-footer__license">
+          © 2013 - 2020 Все права защищены. Торговая марка ReCredit.
+          ООО «Кредитсервис» Распоряжение о выдаче лицензии
+          No2084&nbsp;от 29.11.2018 г
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+<!-- СЛАЙДЕР -->
+  <div id="test1">121212</div>
+<div id="slider-range-min"></div>
+
+<div id="test111">121212</div>
+<div id="slider-range-min22"></div>
+<!-- СЛАЙДЕР КОНЕЦ -->
+  <script src="/js/main-nav.js"></script>
+</body>
+</html>

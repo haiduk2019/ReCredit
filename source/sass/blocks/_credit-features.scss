@@ -1,0 +1,33 @@
+.credit-features__title {
+  @include font-Montserrat(38px, 46px, 800);
+  text-transform: uppercase;
+  // letter-spacing: 21px;
+  color: #262626;
+  margin-bottom: 19px;
+  span {
+    font-weight: 400;
+  }
+}
+
+.credit-features__list {
+  margin-bottom: 42px;
+}
+
+.credit-features__item {
+  @include font-Roboto(16px, 30px, 500);
+  color: #404041;
+  padding-left: 34px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 8px;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+}

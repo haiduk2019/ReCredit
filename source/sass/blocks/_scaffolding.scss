@@ -26,6 +26,16 @@
     url("../fonts/montserrat-v14-latin_cyrillic-700.woff") format("woff");
 }
 
+/* montserrat-800 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Montserrat ExtraBold'),
+       url('../fonts/montserrat-v14-latin_cyrillic-800.woff2') format('woff2'),
+       url('../fonts/montserrat-v14-latin_cyrillic-800.woff') format('woff');
+}
+
 /* roboto-300 - latin_cyrillic */
 @font-face {
   font-family: "Roboto";
@@ -108,4 +118,9 @@ body {
 
 ul, li {
   list-style: none;
+}
+
+.container {
+  width: 372px;
+  margin: 0 auto;
 }

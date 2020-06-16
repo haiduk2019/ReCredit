@@ -1,0 +1,13 @@
+.promo {
+  background: url("../img/main-bg-mob.png") center (center / cover) no-repeat #FFC200;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/main-bg-mob@2x.png");
+  }
+}
+
+
+.promo__wrapper {
+  padding-top: 50px;
+  padding-bottom: 15px;
+}

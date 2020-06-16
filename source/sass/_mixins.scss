@@ -34,18 +34,28 @@
   @include font-Roboto(16px, 16px, 500);
   color: #262626;
   padding: 13px 21px 16px 20px;
-  border: 1px solid #FFC200;
+  border: 1px solid #ffc200;
   border-radius: 25px;
   transition: 0.4s ease;
 
   &:hover,
   &:focus {
-    background-color: #FFC200;
+    background-color: #ffc200;
   }
 
   &:active {
     background-color: #585858;
     border-color: #585858;
-    color: #FFFFFF;
+    color: #ffffff;
   }
+}
+
+@mixin footer-text {
+  @include font-Roboto(14px, 30px, 400);
+}
+
+@mixin footer-title {
+  @include font-Montserrat(12px, 12px, 700);
+  color: #404041;
+  text-transform: uppercase;
 }

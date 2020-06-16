@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>ReCredit: личный кабинет</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__container page-header__container--account">
+      <a href="index.html" class="page-header__logo page-header__logo--account">
+        <img class="page-header__img" src="./img/logo.svg" width="208" height="43" alt="Логотип ReCredit">
+      </a>
+    </div>
+  </header>
+  <main>
+    <section class="personal-account">
+      <div class="container container--account">
+        <div class="personal-account__wrapper">
+          <div class="personal-account__img">
+            <img src="img/icon-account.svg" width="277" height="259" alt="Личный кабинет">
+          </div>
+          <form class="personal-account__form" action="">
+
+            <h2 class="personal-account__title">
+              Личный кабинет
+            </h2>
+            <p class="personal-account__text">
+              Введите свой номер телефона
+              указанный при регистрации
+            </p>
+
+            <label class="visually-hidden" for="phone">
+              Номер телефона
+            </label>
+            <input class="personal-account__input" type="tel" id="phone" name="phone-field"
+              placeholder="+ 38 (000) 000-00-00" required>
+            <button class="personal-account__btn" type="submit" aria-label="Send request">
+              Далее
+            </button>
+            <a href="#" class="personal-account__link">
+              Я новый клиент
+            </a>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+</body>
+
+</html>

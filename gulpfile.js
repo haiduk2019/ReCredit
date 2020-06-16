@@ -17,6 +17,21 @@ var include = require("posthtml-include");
 var del = require("del");
 var htmlmin = require("gulp-htmlmin");
 var minify = require('gulp-minify');
+var concat = require('gulp-concat');
+
+
+gulp.task('compress', async function () {
+  gulp.src('source/js/*.js')
+    .pipe(minify({
+      ext: {
+        src: '-debug.js',
+        min: '.js'
+      },
+      exclude: ['tasks'],
+      ignoreFiles: ['.scombo.js', '-min.js']
+    }))
+    .pipe(gulp.dest('build/js'));
+});
 
 
 gulp.task("css", function () {
@@ -58,7 +73,7 @@ gulp.task("html", function () {
 });
 
 gulp.task("images", function () {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp.src("source/img/*.{png,jpg,svg,jpeg}")
     .pipe(imagemin([
       imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.mozjpeg({ progressive: true }),
@@ -68,7 +83,7 @@ gulp.task("images", function () {
 });
 
 gulp.task("webp", function () {
-  return gulp.src("source/img/**/*.{jpg,png,jpeg}")
+  return gulp.src("source/img/*.{jpg,png,jpeg}")
     .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("source/img"));
 });
@@ -81,7 +96,7 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
+    "source/js/*.js",
     "source/*.ico"
   ], {
     base: "source"
@@ -96,7 +111,7 @@ gulp.task("server", function () {
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
-  gulp.watch("source/img/*.{jpg,png,jpeg}", gulp.series("html", "refresh"));
+  gulp.watch("source/img/*.{jpg,png,jpeg,svg}", gulp.series("html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
   gulp.watch("source/*.html", gulp.series("minify-html"));
   gulp.watch("source/js/*.js", gulp.series("html", "refresh"));
@@ -104,18 +119,6 @@ gulp.task("server", function () {
 
 });
 
-gulp.task('compress', async function () {
-  gulp.src('source/js/*.js')
-    .pipe(minify({
-      ext: {
-        src: '-debug.js',
-        min: '.js'
-      },
-      exclude: ['tasks'],
-      ignoreFiles: ['.scombo.js', '-min.js']
-    }))
-    .pipe(gulp.dest('build/js'))
-});
 
 
 gulp.task("refresh", function (done) {
@@ -128,6 +131,7 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
+/*   "scripts", */
   "compress",
   "sprite",
   "html",

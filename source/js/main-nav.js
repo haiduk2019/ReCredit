@@ -1,16 +1,24 @@
-let navMain = $('.js-main-nav');
+
 let navToggle = $('.js-main-nav__toggle');
 let langMenu = $('.js-lang-menu');
+let navHeader = $('.js-main-nav');
 
 
 navToggle.on('click', function() {
   navToggle.toggleClass('main-nav__toggle--active');
-  navMain.toggleClass('main-nav--active');
-  langMenu.toggleClass('.lang-menu--active');
+  navHeader.toggleClass('main-nav--active');
+  langMenu.toggleClass('lang-menu--active');
 });
 
+//Маска ввода номера на сайте
+// $('input[name=phone-field]').mask("+3 (999) 999-99-99");
 
 
+$(function() {
+  //задание заполнителя с помощью параметра placeholder
+  $('input[name=phone-field]').mask("+3 (999) 999-99-99", {placeholder: "(000) 000-00-00" });
+
+});
 
 $( function() {
 

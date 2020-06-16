@@ -1,0 +1,102 @@
+.personal-account {
+  background-color: #f9f9f9;
+  padding-top: 109px;
+  padding-bottom: 120px;
+}
+.personal-account__img {
+  display: none;
+}
+
+.personal-account__form {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 56px 49px 57px 50px;
+  text-align: center;
+}
+
+.personal-account__title {
+  @include font-Montserrat(24px, 24px, 700);
+  text-transform: uppercase;
+  color: #262626;
+  margin-bottom: 19px;
+}
+
+.personal-account__text {
+  @include font-Roboto(14px, 20px, 400);
+  color: #777777;
+  width: 210px;
+  margin: 0 auto;
+  margin-bottom: 23px;
+}
+
+.personal-account__input {
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  padding: 18px 16px 21px 16px;
+  width: 100%;
+  @include font-Roboto(16px, 16px, 400);
+  color: #404041;
+  margin-bottom: 21px;
+  outline: none;
+
+  &::placeholder {
+    color: #dcdcdc;
+  }
+
+  &:active,
+  &:focus {
+    border-color: #ffc200;
+  }
+}
+
+.personal-account__btn {
+  @include yellow-btn;
+  width: 185px;
+  margin-bottom: 22px;
+}
+
+.personal-account__link {
+  @include white-btn;
+  width: 185px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .personal-account__img {
+    display: block;
+    margin-right: auto;
+    img {
+      width: 277px;
+      height: 259px;
+    }
+  }
+
+  .personal-account {
+    padding-top: 194px;
+    padding-bottom: 293px;
+  }
+
+  .personal-account__wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .personal-account__form {
+    width: 380px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .personal-account {
+    padding-top: 105px;
+    padding-bottom: 185px;
+  }
+  .personal-account__form {
+    width: 389px;
+  }
+
+  .personal-account__img {
+    margin-left: 14px;
+  }
+}

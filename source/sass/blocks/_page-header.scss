@@ -8,10 +8,18 @@
   display: flex;
   padding: 9px 20px 8px 20px;
   align-items: center;
+
+  &--account {
+    padding: 19px 11px 18px 11px;
+  }
 }
 
 .page-header__logo {
   margin-right: 56px;
+
+  &--account {
+    margin: 0 auto;
+  }
 }
 
 .page-header__img {

@@ -1,11 +1,10 @@
 .lang-menu {
   display: none;
-  transition: 0.4 ease;
 }
 
 .lang-menu--active {
-  display: block;
-}
+      display: block;
+    }
 
 .lang-menu__item {
   @include font-Roboto(12px, 21px, 500);

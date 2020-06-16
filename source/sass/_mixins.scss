@@ -31,11 +31,13 @@
 }
 
 @mixin white-btn {
+  display: block;
   @include font-Roboto(16px, 16px, 500);
   color: #262626;
-  padding: 13px 21px 16px 20px;
+  padding: 16px;
   border: 1px solid #ffc200;
-  border-radius: 25px;
+  border-radius: 38px;
+  text-align: center;
   transition: 0.4s ease;
 
   &:hover,
@@ -46,6 +48,29 @@
   &:active {
     background-color: #585858;
     border-color: #585858;
+    color: #ffffff;
+  }
+}
+
+@mixin yellow-btn {
+  @include font-Montserrat(16px, 16px, 700);
+  background-color: #ffc200;
+  color: #000000;
+  padding: 19px;
+  text-align: center;
+  border-radius: 28px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s ease;
+
+  &:hover,
+  &:focus {
+    background-color: #FFD13E;
+  }
+
+  &:active {
+    background-color: #585858;
     color: #ffffff;
   }
 }

@@ -123,4 +123,28 @@ ul, li {
 .container {
   width: 372px;
   margin: 0 auto;
+
+  &--account {
+    width: 389px;
+  }
 }
+
+
+@media (min-width: $tablet-width) {
+  .container {
+
+    &--account {
+      width: 684px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+
+    &--account {
+      width: 778px;
+    }
+  }
+}
+

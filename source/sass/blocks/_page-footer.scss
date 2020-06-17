@@ -3,6 +3,12 @@
   padding-bottom: 41px;
 }
 
+.page-footer__container {
+&:first-of-type {
+  display: none;
+}
+}
+
 .page-footer__copyright {
   background-color: #585858;
   padding-top: 22px;
@@ -13,4 +19,36 @@
 .page-footer__license {
   @include font-Roboto(12px, 16px, 400);
   color: #f9f9f9;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    padding-top: 52px;
+    padding-bottom: 54px;
+  }
+  .page-footer__container {
+    display: flex;
+    &:first-of-type {
+      display: none;
+    }
+  }
+  .page-footer__copyright {
+    padding-top: 17px;
+    padding-bottom: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    display: flex;
+    padding-bottom: 44px;
+  }
+
+  .page-footer__container {
+
+    &:first-of-type {
+      display: flex;
+      margin-right: 144px;
+    }
+  }
 }

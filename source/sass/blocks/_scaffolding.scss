@@ -132,6 +132,7 @@ ul, li {
 
 @media (min-width: $tablet-width) {
   .container {
+    width: 684px;
 
     &--account {
       width: 684px;
@@ -141,6 +142,7 @@ ul, li {
 
 @media (min-width: $desktop-width) {
   .container {
+    width: 1147px;
 
     &--account {
       width: 778px;

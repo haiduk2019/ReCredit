@@ -24,7 +24,7 @@ var size = require('gulp-size');
 
 
 gulp.task('scripts', function() {
-  return gulp.src('source/js/*.js')
+  return gulp.src(['source/js/*jquery*', 'source/js/*.js'])
       .pipe(concat('scripts.js'))
       .pipe(gulp.dest('build/js'))
       .pipe(rename('scripts.min.js'))

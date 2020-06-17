@@ -1,0 +1,29 @@
+.account-message {
+  margin-top: 27px;
+  text-align: center;
+}
+
+.account-message__text {
+  @include font-Roboto(14px, 14px, 400);
+  color: #777777;
+  margin-bottom: 6px;
+}
+
+.account-message__link {
+  @include font-Roboto(14px, 14px, 400);
+  color: #0997e1;
+  text-decoration: underline;
+}
+
+@media (min-width: $tablet-width) {
+  .account-message {
+    width: 380px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .account-message {
+    width: 389px;
+  }
+}

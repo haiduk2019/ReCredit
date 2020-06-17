@@ -27,6 +27,10 @@
   width: 210px;
   margin: 0 auto;
   margin-bottom: 23px;
+
+  &--message {
+    margin-bottom: 17px;
+  }
 }
 
 .personal-account__input {
@@ -38,6 +42,12 @@
   color: #404041;
   margin-bottom: 21px;
   outline: none;
+
+  &--message {
+    width: 133px;
+    padding: 29px 11px 10px 12px;
+    text-align: center;
+  }
 
   &::placeholder {
     color: #dcdcdc;
@@ -62,18 +72,26 @@
 }
 
 @media (min-width: $tablet-width) {
+  .personal-account {
+    padding-top: 194px;
+    padding-bottom: 293px;
+
+    &--message {
+      padding-bottom: 231px;
+    }
+  }
+
   .personal-account__img {
     display: block;
     margin-right: auto;
+
+    &--message {
+    margin-top: 27px;
+    }
     img {
       width: 277px;
       height: 259px;
     }
-  }
-
-  .personal-account {
-    padding-top: 194px;
-    padding-bottom: 293px;
   }
 
   .personal-account__wrapper {
@@ -91,6 +109,10 @@
   .personal-account {
     padding-top: 105px;
     padding-bottom: 185px;
+
+    &--message {
+      padding-bottom: 147px;
+    }
   }
   .personal-account__form {
     width: 389px;

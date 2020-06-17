@@ -23,7 +23,7 @@ $( function() {
 
 
 
-$( "#slider-range-min" ).slider({
+ $( "#slider-range-min" ).slider({
     range: "min",
     value: 10000,
     min: 10000,
@@ -51,3 +51,4 @@ $( "#slider-range-min" ).slider({
 
 
 } );
+

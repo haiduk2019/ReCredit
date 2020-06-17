@@ -18,9 +18,39 @@ var del = require("del");
 var htmlmin = require("gulp-htmlmin");
 var minify = require('gulp-minify');
 var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+var size = require('gulp-size');
 
 
-gulp.task('compress', async function () {
+
+gulp.task('scripts', function() {
+  return gulp.src('source/js/*.js')
+      .pipe(concat('scripts.js'))
+      .pipe(gulp.dest('build/js'))
+      .pipe(rename('scripts.min.js'))
+      .pipe(uglify())
+      .pipe(gulp.dest('build/js'));
+});
+
+/* gulp.task('scripts', function() {
+  var js = gulp.src(['source/js/*.js', '!source/js/*jquery*', '!source/js/*bootstrap*'])
+      .pipe(concat('all.min.js'))
+      .pipe(uglify())
+      .pipe(size({
+        title: 'size of custom js'
+      }))
+      .pipe(gulp.dest('build/js'));
+  var jsDeps = gulp.src(['js/*jquery*', 'js/*bootstrap*'])
+    .pipe(concat('main.js'))
+    .pipe(size({
+      title: 'size of js dependencies'
+    }))
+    .pipe(gulp.dest('build/js'));
+  stream.concat(js, jsDeps);
+}); */
+
+
+/* gulp.task('compress', async function () {
   gulp.src('source/js/*.js')
     .pipe(minify({
       ext: {
@@ -31,7 +61,7 @@ gulp.task('compress', async function () {
       ignoreFiles: ['.scombo.js', '-min.js']
     }))
     .pipe(gulp.dest('build/js'));
-});
+}); */
 
 
 gulp.task("css", function () {
@@ -96,7 +126,6 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/*.js",
     "source/*.ico"
   ], {
     base: "source"
@@ -115,7 +144,9 @@ gulp.task("server", function () {
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
   gulp.watch("source/*.html", gulp.series("minify-html"));
   gulp.watch("source/js/*.js", gulp.series("html", "refresh"));
-  gulp.watch("source/js/*.js", gulp.series("compress"));
+  gulp.watch("source/js/*.js", gulp.series("scripts"));
+ /*  gulp.watch("source/js/*.js", gulp.series("compress")); */
+
 
 });
 
@@ -131,8 +162,8 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
-/*   "scripts", */
-  "compress",
+  "scripts",
+/*   "compress", */
   "sprite",
   "html",
   "minify-html"

@@ -1,7 +1,6 @@
-
-let navToggle = $('.js-main-nav__toggle');
-let langMenu = $('.js-lang-menu');
-let navHeader = $('.js-main-nav');
+var langMenu = $('.js-lang-menu');
+var navHeader = $('.js-main-nav');
+var navToggle = $('.js-main-nav__toggle');
 
 
 navToggle.on('click', function() {

@@ -11,6 +11,7 @@
 
   &--account {
     padding: 19px 11px 18px 11px;
+    text-align: center;
   }
 }
 
@@ -18,7 +19,7 @@
   margin-right: 56px;
 
   &--account {
-    margin: 0 auto;
+    display: inline-block;
   }
 }
 
@@ -31,13 +32,33 @@
   margin-right: auto;
 }
 
+@media (min-width: $tablet-width) {
+  .page-header__container {
+    padding-left: 42px;
+  } }
+
+@media (min-width: $desktop-width) {
+  .page-header {
+  position: absolute;
+  background-color: #fff;
+  top: 14px;
+  width: 100%;
+  }
+
+  .page-header__wrapper {
+    margin: 0 auto;
+    width: 1164px;
+    padding-top: 19px;
+    padding-bottom: 18px;
+  }
+
+  .page-header__container {
+    padding: 0;
+  }
+  .page-header__logo {
+    margin-right: 34px;
 
 
+  }
+}
 
-// @media (min-width: $tablet-width) {
-
-// }
-
-// @media (min-width: $desktop-width) {
-
-// }

@@ -1,19 +1,30 @@
 .credit-nav__list {
   display: flex;
   width: 100%;
+  justify-content: flex-end;
 }
 
 .credit-nav__item {
-  margin-right: 17px;
+  margin-left: 19px;
 
-  &:nth-of-type(3n) {
-    margin-right: 0;
-  }
+   &:first-of-type {
+     margin-left: 0;
+   }
 }
 
 .credit-nav_link {
   @include font-Roboto(14px, 19px, 400);
   color: #000000;
-
 }
 
+@media (min-width: $tablet-width) {
+  .credit-nav__list {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .credit-nav__item {
+    margin-left: 27px;
+  }
+}

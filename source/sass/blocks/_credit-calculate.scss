@@ -1,0 +1,193 @@
+.credit-calculate {
+  border-radius: 21px;
+  box-shadow: 0 3px 20px rgba(180, 96, 0, 0.73);
+  width: 372px;
+}
+
+.credit-calculate__slider {
+  background-color: #404041;
+  padding: 30px 30px 31px 30px;
+  padding-top: 32px;
+  border-top-left-radius: 21px;
+  border-top-right-radius: 21px;
+}
+
+.credit-calculate__title {
+  @include font-Montserrat(16px, 16px, 700);
+  color: #f9f9f9;
+  margin-bottom: 9px;
+}
+
+.credit-calculate__content {
+  background-color: #2e2e2e;
+  border: 1px solid #585858;
+  text-align: center;
+  padding: 21px 0 0 0;
+  margin-bottom: 17px;
+}
+
+.credit-calculate__ranges {
+  display: flex;
+  justify-content: space-between;
+
+  @include font-Roboto(12px, 12px, 400);
+  color: #a8a8a8;
+
+  &--sum {
+    margin-bottom: 25px;
+  }
+}
+
+.credit-calculate__submit {
+  background-color: #f9f9f9;
+  padding: 23px 22px 42px 22px;
+  text-align: center;
+  border-bottom-left-radius: 21px;
+  border-bottom-right-radius: 21px;
+}
+
+.credit-calculate__btn {
+  @include yellow-btn;
+  width: 273px;
+  text-transform: uppercase;
+}
+
+.credit-calculate__payment {
+  @include font-Roboto(13px, 28px, 400);
+  color: #a8a8a8;
+  span {
+    color: #585858;
+    font-weight: 700;
+  }
+}
+
+.credit-calculate__return {
+  @include font-Roboto(17px, 28px, 400);
+  color: #585858;
+  margin-bottom: 31px;
+  span {
+    font-weight: 700;
+    color: #404041;
+  }
+}
+
+
+.credit-calculate__content .credit-calculate__range.ui-widget-content,
+.credit-calculate__content  .ui-corner-all.ui-slider-horizontal {
+  width: 100%;
+  height: 3px;
+  background: #a8a8a8;
+  border-radius: 0;
+  border: none;
+  margin-bottom: -1px;
+}
+
+.credit-calculate__content .credit-calculate__range .ui-slider-range {
+  background: #ffc200;
+  border: none;
+}
+
+
+.credit-calculate__content .ui-slider-handle.ui-corner-all {
+  border-radius: 50%;
+  background: #ffc200;
+  border: 3px solid #ffffff;
+  width: 23px;
+  height: 23px;
+  outline: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.credit-calculate__amount,
+.credit-calculate__period {
+  @include font-Roboto(20px, 20px, 400);
+  color: #f9f9f9;
+  margin-bottom: 18px;
+}
+
+.credit-calculate__content--period {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-left: 2px solid #ffc200;
+    border-bottom: 2px solid #ffc200;
+    transform: rotate(-45deg);
+    right: 16px;
+    top: 20px;
+  }
+}
+
+.credit-calculate__select {
+  background: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  border: none;
+  outline: none;
+  color: #2e2e2e;
+}
+
+.credit-calculate__separator {
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  div {
+    width: 1px;
+    height: 3px;
+    background: #ffc200;
+    position: absolute;
+    bottom: -1px;
+
+    &:nth-of-type(1) {
+      left: 0;
+    }
+    &:nth-of-type(2) {
+      left: 33.3%;
+    }
+    &:nth-of-type(3) {
+      left: 66.6%;
+    }
+    &:nth-of-type(4) {
+      left: 100%;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .credit-calculate {
+    width: 304px;
+    margin-left: auto;
+
+  }
+
+  .credit-calculate__btn {
+    width: 261px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .credit-calculate {
+    width: 388px;
+
+  }
+  .credit-calculate__payment {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .credit-calculate__return {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 27px;
+  }
+
+  .credit-calculate__btn {
+    width: 289px;
+  }
+}

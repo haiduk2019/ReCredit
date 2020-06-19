@@ -8,6 +8,15 @@
 }
 
 @media (max-width: $tablet-width-only) {
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    display: block;
+  }
+
   .main-nav__toggle {
     display: block;
     width: 60px;
@@ -55,4 +64,11 @@
       }
     }
   }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
 }

@@ -1,16 +1,15 @@
+.credit-features {
+  margin-bottom: 37px;
+}
+
 .credit-features__title {
   @include font-Montserrat(38px, 46px, 800);
   text-transform: uppercase;
-  // letter-spacing: 21px;
   color: #262626;
   margin-bottom: 19px;
   span {
     font-weight: 400;
   }
-}
-
-.credit-features__list {
-  margin-bottom: 42px;
 }
 
 .credit-features__item {
@@ -29,5 +28,31 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%) rotate(-45deg);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .credit-features__title {
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 33px;
+  }
+
+  .credit-features {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .credit-features {
+    margin-left: 42px;
+    width: 398px;
+    margin-top: 24px;
+  }
+
+  .credit-features__title {
+    font-size: 40px;
+    line-height: 55px;
+    margin-bottom: 69px;
   }
 }

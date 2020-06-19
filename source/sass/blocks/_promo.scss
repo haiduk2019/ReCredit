@@ -1,13 +1,53 @@
 .promo {
-  background: url("../img/main-bg-mob.png") center (center / cover) no-repeat #FFC200;
+  background: url("../img/main-bg-mob.png") center (center / cover) no-repeat #ffc200;
+  padding-top: 50px;
+  padding-bottom: 15px;
 
   @media (min-resolution: $retina-dppx) {
     background-image: url("../img/main-bg-mob@2x.png");
+    padding-top: 50px;
+    padding-bottom: 15px;
   }
 }
 
-
 .promo__wrapper {
-  padding-top: 50px;
-  padding-bottom: 15px;
+  margin-bottom: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background: url("../img/main-bg-tab.png") center (center / cover) no-repeat #ffc200;
+    padding: 50px 0 27px 0;
+
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-bg-tab@2x.png");
+    }
+  }
+  .promo__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 23px;
+  }
+
+  .promo__features {
+    width: 306px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    background: url("../img/main-bg-desk.jpg") center (center / cover) no-repeat #ffc200;
+    padding: 158px 0 73px 0;
+
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-bg-desk@2x.jpg");
+    }
+  }
+
+  .promo__wrapper {
+    margin-bottom: 19px;
+  }
 }

@@ -125,6 +125,7 @@ ul, li {
   margin: 0 auto;
 
   &--account {
+    margin: 0 auto;
     width: 389px;
   }
 }
@@ -142,7 +143,7 @@ ul, li {
 
 @media (min-width: $desktop-width) {
   .container {
-    width: 1147px;
+    width: 1164px;
 
     &--account {
       width: 778px;

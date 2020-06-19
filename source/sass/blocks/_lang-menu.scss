@@ -19,3 +19,9 @@
     color: #A8A8A8;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .lang-menu {
+    display: block;
+  }
+}

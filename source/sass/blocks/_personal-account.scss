@@ -50,7 +50,10 @@
   }
 
   &::placeholder {
-    color: #dcdcdc;
+    color: #707070;
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: 0;
   }
 
   &:active,
@@ -60,13 +63,11 @@
 }
 
 .personal-account__btn {
-  @include yellow-btn;
   width: 185px;
   margin-bottom: 22px;
 }
 
 .personal-account__link {
-  @include white-btn;
   width: 185px;
   margin: 0 auto;
 }

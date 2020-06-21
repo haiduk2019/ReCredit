@@ -13,9 +13,9 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <div class="page-header__container page-header__container--account">
-      <a href="index.html" class="page-header__logo page-header__logo--account">
+  <header class="page-header--account">
+    <div class="page-header__container--account">
+      <a href="index.html" class="page-header__logo--account">
         <img class="page-header__img" src="./img/logo.svg" width="208" height="43" alt="Логотип ReCredit">
       </a>
     </div>
@@ -39,11 +39,11 @@
               Номер телефона
             </label>
             <input class="personal-account__input personal-account__input--message" type="text" id="sms-code"
-              name="sms-code-field" placeholder="0 0 0 0" max="4" required>
-            <button class="personal-account__btn" type="submit" aria-label="Send request">
+              name="sms-code-field"  maxlength="4" required placeholder="__ __ __ __">
+            <button class="personal-account__btn yellow-btn" type="submit" aria-label="Send request">
               Далее
             </button>
-            <a href="#" class="personal-account__link">
+            <a href="#" class="personal-account__link white-btn">
               Я новый клиент
             </a>
           </form>

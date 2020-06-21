@@ -1,0 +1,8 @@
+.main-heading {
+  @include font-Montserrat(28px, 28px, 700);
+  color: #262626;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 34px;
+}

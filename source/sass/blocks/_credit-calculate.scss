@@ -47,7 +47,6 @@
 }
 
 .credit-calculate__btn {
-  @include yellow-btn;
   width: 273px;
   text-transform: uppercase;
 }
@@ -82,7 +81,8 @@
   margin-bottom: -1px;
 }
 
-.credit-calculate__content .credit-calculate__range .ui-slider-range {
+
+.credit-calculate__content .ui-slider-range.ui-corner-all {
   background: #ffc200;
   border: none;
 }

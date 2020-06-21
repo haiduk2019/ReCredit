@@ -17,39 +17,12 @@ navToggle.on('click', function () {
 
 $(function () {
   //задание заполнителя с помощью параметра placeholder
-  $('input[name=phone-field]').mask("+3 (999) 999-99-99", {
-    placeholder: "(000) 000-00-00"
-  });
+  $('input[name=phone-field]').mask("+38 (999) 999-99-99");
+/*   $('input[name=sms-code-field]').mask("9 9 9 9"); */
+/* $.mask.definitions['~'] = '[+ -]';
+$('input[name=sms-code-field]').mask("~ 9.99 ~ 9.99 999"); */
+$('input[name=sms-code-field]').mask("9 9 9 9");
 
 });
 
-/* $(function () {
-  $("#slider-range-min").slider({
-    range: "min",
-    value: 10000,
-    min: 10000,
-    max: 100000,
-    slide: function (event, ui) {
-      $("#test1").text("$" + ui.value);
-    }
-  });
 
-
-  $("#slider-range-min22").slider({
-    range: "min",
-    value: 3,
-    step: 3,
-    min: 3,
-    max: 12,
-    slide: function (event, ui) {
-      $("#test111").text("$" + ui.value);
-    }
-  });
-
-  $("#test1").text("$" + $("#slider-range-min").slider("value"));
-  $("#test111").text("$" + $("#slider-range-min22").slider("value"));
-
-
-
-});
- */

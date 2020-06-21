@@ -18,7 +18,7 @@ $( document ).ready(function() {
     min: 3,
     max: 12,
     step: 3,
-    // range: "min",
+    range: "min",
     value: 12,
     slide: function( event, ui ) {
       select[ 0 ].selectedIndex = ui.value - 1;

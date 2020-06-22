@@ -5,6 +5,10 @@
   text-align: center;
   margin-top: 12px;
   margin-bottom: 34px;
+
+  &--pay-loan {
+    margin-bottom: 30px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -12,6 +16,9 @@
     font-size: 30px;
     line-height: 30px;
     margin-bottom: 30px;
+    &--pay-loan {
+      margin-bottom: 31px;
+    }
   }
 }
 
@@ -22,5 +29,9 @@
     line-height: 40px;
     margin-top: 14px;
     margin-bottom: 47px;
+
+    &--pay-loan {
+      margin-bottom: 51px;
+    }
   }
 }

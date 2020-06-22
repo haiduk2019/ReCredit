@@ -17,6 +17,7 @@ border: 1px solid #DCDCDC;
 border-radius: 5px;
 margin-bottom: 20px;
 padding: 21px 19px 20px 19px;
+outline: none;
 
 &:last-of-type {
   margin-bottom: 0;
@@ -25,6 +26,11 @@ padding: 21px 19px 20px 19px;
 &::placeholder {
   @include font-Roboto(16px, 16px, 400);
   color: #A8A8A8;
+}
+
+&:focus,
+&:active {
+  border-color: #FFC200;
 }
 }
 

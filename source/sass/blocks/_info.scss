@@ -146,6 +146,14 @@
     top: 50%;
     transform: translateY(-50%);
   }
+
+  .info--connection {
+    margin-right: 0;
+  }
+
+  .info--connection.info--contacts {
+    margin-bottom: 35px;
+  }
 }
 
 @media (min-width: $desktop-width) {

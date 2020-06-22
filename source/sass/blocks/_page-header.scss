@@ -3,7 +3,11 @@
   width: auto;
   margin: 0 auto;
 
-  &--bordered {
+
+}
+
+@media (max-width: $tablet-width-only) {
+  .page-header__wrapper--bordered {
     box-shadow: inset 0 -2px 2px -2px #b9afaf;
    /*  border-bottom: 1px solid #dcdcdc; */
   }

@@ -6,3 +6,21 @@
   margin-top: 12px;
   margin-bottom: 34px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-heading {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .main-heading {
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 14px;
+    margin-bottom: 47px;
+  }
+}

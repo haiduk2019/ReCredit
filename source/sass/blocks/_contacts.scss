@@ -6,3 +6,31 @@
 .contacts .contacts__container {
   margin-bottom: 45px;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts .contacts__container {
+    margin-bottom: 0;
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    background: url("../img/contacts-bg-desk.png") center (center / cover) no-repeat;
+    padding-top: 130px;
+    padding-bottom: 87px;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/contacts-bg-desk@2x.png");
+    }
+  }
+  .contacts__wrapper {
+    width: 679px;
+    margin-left: auto;
+  }
+}

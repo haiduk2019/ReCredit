@@ -1,23 +1,32 @@
 .main-heading {
-  @include font-Montserrat(28px, 28px, 700);
+  @include font-Montserrat(28px, 38px, 700);
   color: #262626;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 12px;
-  margin-bottom: 34px;
+  margin-top: 7px;
+  margin-bottom: 30px;
 
   &--pay-loan {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+  }
+
+  &--contacts {
+    margin-bottom: 29px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .main-heading {
     font-size: 30px;
-    line-height: 30px;
+    line-height: 49px;
+    margin-top: 2px;
     margin-bottom: 30px;
     &--pay-loan {
-      margin-bottom: 31px;
+      margin-bottom: 23px;
+    }
+
+    &--reference-info {
+      margin-bottom: 50px;
     }
   }
 }
@@ -26,12 +35,18 @@
 @media (min-width: $desktop-width) {
   .main-heading {
     font-size: 40px;
-    line-height: 40px;
-    margin-top: 14px;
+    line-height: 49px;
+    margin-top: 9px;
     margin-bottom: 47px;
 
     &--pay-loan {
-      margin-bottom: 51px;
+      margin-bottom: 48px;
     }
+
+    &--contacts {
+      margin-bottom: 44px;
+    }
+
+
   }
 }

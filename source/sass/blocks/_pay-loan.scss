@@ -1,13 +1,13 @@
 .pay-loan {
   padding-top: 30px;
-  padding-bottom: 71px;
+  padding-bottom: 70px;
 }
 
 .pay-loan__descr {
   @include font-Montserrat(18px, 26px, 700);
   color: #262626;
   text-align: center;
-  margin-bottom: 29px;
+  margin-bottom: 31px;
 }
 
 .pay-loan__list {
@@ -15,7 +15,7 @@
 }
 
 @media (min-width: $tablet-width) {
-   .pay-loan {
+  .pay-loan {
     padding-top: 30px;
     padding-bottom: 64px;
   }
@@ -28,10 +28,12 @@
     margin-bottom: 52px;
   }
 
+  .pay-loan__descr {
+    margin-bottom: 28px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-
   .pay-loan {
     padding-top: 130px;
     padding-bottom: 51px;
@@ -44,6 +46,6 @@
   }
 
   .pay-loan__descr {
-    margin-bottom: 40px;
+    margin-bottom: 39px;
   }
 }

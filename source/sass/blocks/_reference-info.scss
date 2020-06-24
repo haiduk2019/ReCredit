@@ -1,0 +1,31 @@
+.reference-info {
+  padding-top: 30px;
+  padding-bottom: 64px;
+}
+
+.reference-info__subtitle {
+  @include font-Montserrat(20px, 20px, 700);
+  color: #262626;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .reference-info__subtitle {
+    display: none;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .reference-info {
+    padding-top: 130px;
+    padding-bottom: 54px;
+  }
+
+  .reference-info__list {
+    width: 776px;
+    margin: 0 auto;
+  }
+}

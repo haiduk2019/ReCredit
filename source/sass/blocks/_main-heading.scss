@@ -13,6 +13,10 @@
   &--contacts {
     margin-bottom: 29px;
   }
+
+  &--credit-products {
+    margin-bottom: 36px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -27,6 +31,10 @@
 
     &--reference-info {
       margin-bottom: 50px;
+    }
+
+    &--credit-products {
+      margin-bottom: 69px;
     }
   }
 }
@@ -46,6 +54,10 @@
     &--contacts {
       margin-bottom: 44px;
     }
+    &--credit-products {
+      margin-bottom: 83px;
+    }
+
 
 
   }

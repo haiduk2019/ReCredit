@@ -1,0 +1,16 @@
+.credit-conditions {
+  padding-top: 20px;
+  padding-bottom: 17px;
+  border-top: 1px solid #ececec;
+}
+
+.credit-conditions__title {
+  @include font-Roboto(14px, 20px, 700);
+  color: #585858;
+  margin-bottom: 19px;
+}
+
+.credit-conditions__item {
+  @include font-Roboto(14px, 20px, 400);
+  color: #585858;
+}

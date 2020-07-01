@@ -109,7 +109,7 @@
         <ul class="pay-loan__list">
           <li class="pay-loan__item payment-method">
             <div class="payment-method__img">
-              <img src="./img/cashbox.svg" width="62" height="80" alt="cashbox" >
+              <img src="./img/cashbox.svg" width="62" height="80" alt="cashbox">
             </div>
             <div class="payment-method__info">
               <p class="payment-method__text">
@@ -120,34 +120,37 @@
           </li>
           <li class="pay-loan__item payment-method">
             <div class="payment-method__img">
-              <img src="./img/terminal.svg" width="53" height="53" alt="terminal" >
+              <img src="./img/terminal.svg" width="53" height="53" alt="terminal">
             </div>
             <div class="payment-method__info">
               <p class="payment-method__text">
                 Через терминалы
                 самообслуживания ПриватБанка
               </p>
-              <a href="" class="payment-method__link">
-                Инструкция
-              </a>
+              <div class="payment-method__toggle js-payment-method__toggle">
+                <span>Инструкция</span>
+                <img class="payment-method__arrow js-payment-method__arrow" src="./img/arrow-down.png" alt="show instruction" width="10" height="10">
+              </div>
             </div>
           </li>
           <li class="pay-loan__item payment-method">
             <div class="payment-method__img">
-              <img src="./img/privat24.svg" width="64" height="64" alt="privat24" >
+              <img src="./img/privat24.svg" width="64" height="64" alt="privat24">
             </div>
             <div class="payment-method__info">
               <p class="payment-method__text">
                 Через Приват24
               </p>
-              <a href="" class="payment-method__link">
-                Инструкция
-              </a>
+              <div class="payment-method__toggle js-payment-method__toggle">
+                <span>Инструкция</span>
+                <img class="payment-method__arrow  js-payment-method__arrow" src="./img/arrow-down.png" alt="show instruction" width="10" height="10">
+              </div>
             </div>
+
           </li>
           <li class="pay-loan__item payment-method">
             <div class="payment-method__img">
-              <img src="./img/personal-account.svg" width="64" height="64" alt="personal-account" >
+              <img src="./img/personal-account.svg" width="64" height="64" alt="personal-account">
             </div>
             <div class="payment-method__info">
               <p class="payment-method__text">
@@ -162,8 +165,35 @@
             Реквизиты для оплаты:
           </h3>
           <p class="payment-details__content">
-            Отримувач: ТОВ "Кредитсервіс" IBAN: UA473007110000026005052624315 в&nbsp;ПАТ «КБ «Приватбанк»код ЕДРПОУ 41125531, МФО 300711В назначении&nbsp;платежа не забывайте указывать номер вашего кредитного договора и Фамилию Имя Отчество
+            Отримувач: ТОВ "Кредитсервіс" IBAN: UA473007110000026005052624315 в&nbsp;ПАТ «КБ «Приватбанк»код ЕДРПОУ
+            41125531, МФО 300711В назначении&nbsp;платежа не забывайте указывать номер вашего кредитного договора и
+            Фамилию Имя Отчество
           </p>
+        </div>
+
+        <div class="pay-loan__instruction instruction-info js-instruction-info">
+          <h3 class="instruction-info__title">
+            Инструкция
+          </h3>
+          <ul class="instruction-info__list reference-info__list">
+            <li class="reference-info__item reference-container">
+              <p class="reference-container__question">
+                Как оплатить через терминалы самообслуживания ПриватБанка
+              </p>
+              <p class="reference-container__answer js-reference-container__answer">
+                Кредитный договор есть в открытом доступе на сайте ReCredit.com.ua в разделе «Юридическая информация», в подразделе «Документы компании»
+              </p>
+              <div class="reference-container__check-mark js-reference-container__check-mark"></div>
+            </li>
+            <li class="reference-info__item reference-container">
+              <p class="reference-container__question">
+                Как оплатить через Приват24
+              </p>
+              <p class="reference-container__answer js-reference-container__answer">
+                Кредитный договор есть в открытом доступе на сайте ReCredit.com.ua в разделе «Юридическая информация», в подразделе «Документы компании»
+              </p>
+              <div class="reference-container__check-mark js-reference-container__check-mark"></div>
+            </li>
         </div>
       </div>
     </section>

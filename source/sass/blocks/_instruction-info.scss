@@ -1,0 +1,16 @@
+.instruction-info {
+  margin-top: 86px;
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.instruction-info__title {
+  @include font-Montserrat(20px, 20px, 700);
+  color: #262626;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 24px;
+}

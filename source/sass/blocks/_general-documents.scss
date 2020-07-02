@@ -1,0 +1,44 @@
+.general-documents {
+}
+
+.general-documents__item {
+}
+
+.general-documents__link {
+  @include font-Roboto(16px, 32px, 300);
+  color: #585858;
+  transition: 0.4s ease;
+}
+
+.general-documents__title {
+  @include font-Montserrat(18px, 18px, 700);
+  color: #262626;
+  margin-top: 32px;
+  margin-bottom: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .general-documents__link {
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  .general-documents__title {
+    margin-top: 35px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .general-documents {
+    margin-left: auto;
+    width: 777px;
+  }
+
+  .general-documents__link {
+    &:hover,
+    &:focus {
+      color: #0997e1;
+    }
+  }
+}

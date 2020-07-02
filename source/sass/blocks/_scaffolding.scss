@@ -132,6 +132,10 @@ ul, li {
   &--reference-info {
     width: 398px;
   }
+
+  &--about-company {
+    width: 412px;
+  }
 }
 
 
@@ -142,6 +146,12 @@ ul, li {
     &--account {
       width: 684px;
     }
+
+    &--about-company {
+      width: 768px;
+    }
+
+
   }
 }
 
@@ -151,6 +161,10 @@ ul, li {
 
     &--account {
       width: 778px;
+    }
+
+    &--about-company {
+      width: 100%;
     }
   }
 }

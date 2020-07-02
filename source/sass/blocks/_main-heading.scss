@@ -17,6 +17,10 @@
   &--credit-products {
     margin-bottom: 36px;
   }
+
+  &--about-company {
+    margin-bottom: 47px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -36,6 +40,11 @@
     &--credit-products {
       margin-bottom: 69px;
     }
+
+    &--about-company {
+      margin-bottom: 25px;
+    }
+
   }
 }
 
@@ -58,6 +67,9 @@
       margin-bottom: 83px;
     }
 
+    &--about-company {
+      margin-bottom: 51px;
+    }
 
 
   }

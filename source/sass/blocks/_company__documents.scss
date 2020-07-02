@@ -1,0 +1,15 @@
+.company__documents {
+  padding-top: 59px;
+}
+
+@media (min-width: $tablet-width) {
+  .company__documents {
+    padding-top: 76px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+    .company__documents {
+      padding-top: 74px;
+    }
+  }

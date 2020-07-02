@@ -1,0 +1,79 @@
+.license-documents {
+  margin-bottom: 79px;
+}
+
+.license-documents__img {
+  margin-bottom: 39px;
+  img {
+    margin: 0 auto;
+  }
+}
+
+.license-documents__title {
+  @include font-Montserrat(20px, 20px, 700);
+  text-transform: uppercase;
+  color: #262626;
+  margin-bottom: 20px;
+}
+
+.license-documents__text {
+  @include font-Roboto(16px, 24px, 400);
+  color: #585858;
+  margin-bottom: 24px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .license-documents {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 76px;
+  }
+
+  .license-documents__info {
+    width: 449px;
+  }
+
+  .license-documents__title {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 34px;
+  }
+
+  .license-documents__img {
+    margin-bottom: 0px;
+    margin-right: 76px;
+    margin-top: 12px;
+
+    img {
+      width: 145px;
+      height: 203px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .license-documents {
+    margin-bottom: 31px;
+  }
+
+  .license-documents__info {
+    width: 680px;
+  }
+
+  .license-documents__img {
+    margin-bottom: 0px;
+    margin-right: 96px;
+    margin-top: 12px;
+    margin-left: 28px;
+    margin-top: 18px;
+
+    img {
+      width: 169px;
+      height: 237px;
+    }
+  }
+}

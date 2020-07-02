@@ -1,0 +1,17 @@
+.about-company {
+  padding-top: 30px;
+  padding-bottom: 52px;
+}
+
+@media (min-width: $tablet-width) {
+  .about-company {
+    padding-bottom: 48px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-company {
+    padding-top: 130px;
+    padding-bottom: 54px;
+  }
+}

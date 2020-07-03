@@ -1,0 +1,49 @@
+.getting-info {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.getting-info__steps {
+  padding-bottom: 67px;
+}
+
+.getting-info__link {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 232px;
+}
+
+@media (min-width: $tablet-width) {
+  .getting-info__wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .getting-info__range {
+    width: 304px;
+  }
+
+  .getting-info__steps {
+    width: 304px;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .getting-info {
+    padding-top: 130px;
+    padding-bottom: 87px;
+  }
+
+  .getting-info__range {
+    width: 388px;
+  }
+
+  .getting-info__steps {
+    width: 680px;
+  }
+
+  .getting-info__link {
+    width: 248px;
+  }
+}

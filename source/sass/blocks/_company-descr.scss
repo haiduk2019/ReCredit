@@ -48,9 +48,9 @@
 
 @media (min-width: $desktop-width) {
   .company-descr {
-    background: url("../img/animation-bg.png") center (center/cover) no-repeat #ffd13e;
+    background: url("../img/animation-bg.png") top left  no-repeat #ffd13e;
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/animation-bg@2x.png");
+      background-image: url("../img/animation-bg@2x.png") top left  no-repeat #ffd13e;
     }
   }
 

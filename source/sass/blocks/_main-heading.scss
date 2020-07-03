@@ -21,6 +21,12 @@
   &--about-company {
     margin-bottom: 47px;
   }
+  &--getting-info {
+    margin: 0 auto;
+    margin-bottom: 48px;
+    margin-top: 7px;
+    width: 248px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -44,7 +50,10 @@
     &--about-company {
       margin-bottom: 25px;
     }
-
+    &--getting-info {
+      margin-bottom: 56px;
+      width: auto;
+    }
   }
 }
 
@@ -71,6 +80,8 @@
       margin-bottom: 51px;
     }
 
-
+    &--getting-info {
+      margin-bottom: 70px;
+    }
   }
 }

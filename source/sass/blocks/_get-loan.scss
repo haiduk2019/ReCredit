@@ -1,0 +1,142 @@
+.get-loan {
+  padding-top: 30px;
+  padding-bottom: 75px;
+  background-color: #f9f9f9;
+}
+
+.get-loan__form {
+  background-color: #fff;
+  border-radius: 15px;
+  padding-top: 30px;
+  padding-bottom: 58px;
+}
+
+.get-loan__wrapper {
+  width: 373px;
+  margin: 0 auto;
+}
+
+.get-loan__title {
+  @include font-Montserrat(24px, 24px, 700);
+  text-transform: uppercase;
+  text-align: center;
+  color: #262626;
+  margin-bottom: 19px;
+}
+
+.get-loan__descr {
+  @include font-Roboto(14px, 20px, 400);
+  color: #777777;
+  text-align: center;
+  margin-bottom: 23px;
+}
+
+.get-loan__subtitle {
+  @include font-Montserrat(16px, 16px, 700);
+  color: #404041;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.get-loan__input {
+  width: 100%;
+  color: #a8a8a8;
+  height: 60px;
+  margin-bottom: 20px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  outline: none;
+  padding: 15px 20px 14px 20px;
+  color: #404041;
+  @include font-Roboto(16px, 16px, 400);
+
+  &::placeholder {
+    color: #a8a8a8;
+    padding: 15px 20px 20px 0;
+  }
+
+  &:focus,
+  &:active {
+    border-color: #ffc200;
+  }
+
+  &--employment {
+    margin-bottom: 31px;
+  }
+
+  &--loan-purpose {
+    margin-bottom: 31px;
+  }
+}
+
+.get-loan__checklabel {
+  @include font-Roboto(14px, 18px, 400);
+  color: #585858;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding-left: 40px;
+  a {
+    text-decoration: underline;
+    color: #0997e1;
+  }
+
+  &--confirm {
+    margin-bottom: 22px;
+  }
+
+  &--agreement {
+    margin-bottom: 40px;
+  }
+}
+
+.get-loan__checkinput:not(:checked) + .get-loan__checklabel::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid #707070;
+  top: 0;
+  left: 0;
+}
+
+.get-loan__checkinput:checked + .get-loan__checklabel::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: #ffc200;
+  border: 1px solid #FFC200;
+  top: 0;
+  left: 0;
+}
+
+.get-loan__checkinput:checked + .get-loan__checklabel::after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 6px;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff;
+  transform: rotate(-45deg);
+  top: 4px;
+  left: 5px;
+}
+
+.get-loan__checkinput + .get-loan__checklabel::before,
+.get-loan__checkinput + .get-loan__checklabel::after {
+  transition: 0.3s ease;
+}
+
+.get-loan__checkinput + .get-loan__checklabel {
+  transition: 0.3s ease;
+}
+
+.get-loan__btn {
+  display: block;
+  width: 259px;
+  margin: 0 auto;
+}

@@ -17,6 +17,12 @@
   &--getting-info {
     background-color: #fff;
   }
+  &--get-loan {
+    padding: 31px 0 31px 0;
+    border-top: 1px solid #DCDCDC;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
 }
 
 .credit-calculate__title {
@@ -26,6 +32,10 @@
   &--getting-info {
     color: #404041;
     margin-bottom: 10px;
+  }
+
+  &--get-loan {
+    text-align: center;
   }
 }
 
@@ -40,6 +50,9 @@
     border-color: #dcdcdc;
     margin-bottom: 13px;
   }
+ /*  &--get-loan {
+    width: ;
+  } */
 }
 
 .credit-calculate__ranges {

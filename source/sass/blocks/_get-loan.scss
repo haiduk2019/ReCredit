@@ -109,7 +109,7 @@
   height: 20px;
   border-radius: 3px;
   background-color: #ffc200;
-  border: 1px solid #FFC200;
+  border: 1px solid #ffc200;
   top: 0;
   left: 0;
 }
@@ -139,4 +139,21 @@
   display: block;
   width: 259px;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .get-loan__wrapper {
+    width: 390px;
+  }
+
+  .get-loan__form {
+    padding-top: 52px;
+    padding-bottom: 62px;
+  }
+
+  .get-loan__checklabel {
+    &--agreement {
+      margin-bottom: 58px;
+    }
+  }
 }

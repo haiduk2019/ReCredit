@@ -5,7 +5,7 @@
 }
 
 .get-loan__form {
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 15px;
   padding-top: 30px;
   padding-bottom: 58px;
@@ -39,8 +39,8 @@
 }
 
 .get-loan__input {
+  @include font-Roboto(16px, 16px, 400);
   width: 100%;
-  color: #a8a8a8;
   height: 60px;
   margin-bottom: 20px;
   border: 1px solid #dcdcdc;
@@ -48,7 +48,6 @@
   outline: none;
   padding: 15px 20px 14px 20px;
   color: #404041;
-  @include font-Roboto(16px, 16px, 400);
 
   &::placeholder {
     color: #a8a8a8;
@@ -76,6 +75,7 @@
   display: block;
   cursor: pointer;
   padding-left: 40px;
+
   a {
     text-decoration: underline;
     color: #0997e1;
@@ -96,7 +96,7 @@
   width: 20px;
   height: 20px;
   border-radius: 3px;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 1px solid #707070;
   top: 0;
   left: 0;
@@ -119,8 +119,8 @@
   position: absolute;
   width: 11px;
   height: 6px;
-  border-bottom: 1px solid #fff;
-  border-left: 1px solid #fff;
+  border-bottom: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
   transform: rotate(-45deg);
   top: 4px;
   left: 5px;

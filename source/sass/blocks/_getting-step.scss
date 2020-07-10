@@ -1,6 +1,6 @@
-
 .getting-step__img {
   margin-bottom: 23px;
+
   img {
     margin: 0 auto;
   }
@@ -15,6 +15,7 @@
 
 .getting-step {
   margin-bottom: 57px;
+
   &:last-of-type {
     margin-bottom: 0;
   }
@@ -23,12 +24,12 @@
 .getting-step__text {
   @include font-Roboto(16px, 24px, 400);
   color: #585858;
-
 }
 
 @media (min-width: $tablet-width) {
   .getting-step {
     margin-bottom: 80px;
+
     &:last-of-type {
       margin-bottom: 0;
     }
@@ -44,9 +45,10 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 65px;
+
     &:nth-of-type(2) {
       margin-bottom: 101px;
-  }
+    }
   }
 
   .getting-step__info {
@@ -59,6 +61,5 @@
     justify-content: center;
     align-items: center;
     width: 244px;
-
   }
 }

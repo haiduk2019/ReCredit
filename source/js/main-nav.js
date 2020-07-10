@@ -12,20 +12,20 @@ navToggle.on('click', function () {
 });
 
 var payToggle = $('.js-payment-method__toggle');
-var payArrow =$('.js-payment-method__arrow');
+var payArrow = $('.js-payment-method__arrow');
 var payInfo = $('.js-instruction-info');
 
 payToggle.on('click', function () {
   payToggle.removeClass('payment-method__toggle--active');
   $(this).addClass('payment-method__toggle--active');
 
-/*   payArrow.toggleClass('payment-method__arrow--active'); */
-if (payInfo.hasClass('instruction-info--active')) {
-  // payInfo.removeClass('instruction-info--active');
-} else {
-  payInfo.addClass('instruction-info--active');
-}
-/*   payInfo.toggleClass('instruction-info--active'); */
+  /*   payArrow.toggleClass('payment-method__arrow--active'); */
+  if (payInfo.hasClass('instruction-info--active')) {
+    // payInfo.removeClass('instruction-info--active');
+  } else {
+    payInfo.addClass('instruction-info--active');
+  }
+  /*   payInfo.toggleClass('instruction-info--active'); */
 });
 
 //Маска ввода номера на сайте
@@ -35,11 +35,9 @@ if (payInfo.hasClass('instruction-info--active')) {
 $(function () {
   //задание заполнителя с помощью параметра placeholder
   $('input[name=phone-field]').mask("+38 (999) 999-99-99");
-/*   $('input[name=sms-code-field]').mask("9 9 9 9"); */
-/* $.mask.definitions['~'] = '[+ -]';
-$('input[name=sms-code-field]').mask("~ 9.99 ~ 9.99 999"); */
-$('input[name=sms-code-field]').mask("9 9 9 9");
+  /*   $('input[name=sms-code-field]').mask("9 9 9 9"); */
+  /* $.mask.definitions['~'] = '[+ -]';
+  $('input[name=sms-code-field]').mask("~ 9.99 ~ 9.99 999"); */
+  $('input[name=sms-code-field]').mask("9 9 9 9");
 
 });
-
-

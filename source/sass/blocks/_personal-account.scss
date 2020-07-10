@@ -3,12 +3,13 @@
   padding-top: 109px;
   padding-bottom: 120px;
 }
+
 .personal-account__img {
   display: none;
 }
 
 .personal-account__form {
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 15px;
   padding: 56px 49px 57px 50px;
   text-align: center;
@@ -34,11 +35,11 @@
 }
 
 .personal-account__input {
+  @include font-Roboto(16px, 16px, 400);
   border: 1px solid #dcdcdc;
   border-radius: 5px;
   padding: 18px 16px 21px 16px;
   width: 100%;
-  @include font-Roboto(16px, 16px, 400);
   color: #404041;
   margin-bottom: 21px;
   outline: none;
@@ -87,8 +88,9 @@
     margin-right: auto;
 
     &--message {
-    margin-top: 27px;
+      margin-top: 27px;
     }
+
     img {
       width: 277px;
       height: 259px;
@@ -115,6 +117,7 @@
       padding-bottom: 147px;
     }
   }
+
   .personal-account__form {
     width: 389px;
   }

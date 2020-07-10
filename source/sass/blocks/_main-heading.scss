@@ -21,6 +21,7 @@
   &--about-company {
     margin-bottom: 47px;
   }
+
   &--getting-info {
     margin: 0 auto;
     margin-bottom: 48px;
@@ -35,6 +36,7 @@
     line-height: 49px;
     margin-top: 2px;
     margin-bottom: 30px;
+
     &--pay-loan {
       margin-bottom: 23px;
     }
@@ -50,13 +52,13 @@
     &--about-company {
       margin-bottom: 25px;
     }
+
     &--getting-info {
       margin-bottom: 56px;
       width: auto;
     }
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .main-heading {
@@ -72,6 +74,7 @@
     &--contacts {
       margin-bottom: 44px;
     }
+
     &--credit-products {
       margin-bottom: 83px;
     }

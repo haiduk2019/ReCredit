@@ -3,8 +3,8 @@
 }
 
 .lang-menu--active {
-      display: block;
-    }
+  display: block;
+}
 
 .lang-menu__item {
   @include font-Roboto(12px, 21px, 500);
@@ -16,7 +16,7 @@
   }
 
   &--active {
-    color: #A8A8A8;
+    color: #a8a8a8;
   }
 }
 

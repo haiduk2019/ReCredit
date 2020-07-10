@@ -2,14 +2,12 @@
   position: relative;
   width: auto;
   margin: 0 auto;
-
-
 }
 
 @media (max-width: $tablet-width-only) {
   .page-header__wrapper--bordered {
     box-shadow: inset 0 -2px 2px -2px #b9afaf;
-   /*  border-bottom: 1px solid #dcdcdc; */
+    /*  border-bottom: 1px solid #dcdcdc; */
   }
 }
 
@@ -19,7 +17,7 @@
   align-items: center;
 
   &--account,
-  &--get-loan  {
+  &--get-loan {
     padding: 19px 11px 18px 11px;
     text-align: center;
   }
@@ -52,22 +50,37 @@
 @media (min-width: $desktop-width) {
   .page-header {
     position: absolute;
-    background-color: #fff;
+    background-color: #ffffff;
     top: 14px;
     width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .page-header__wrapper {
     margin: 0 auto;
-    width: 1164px;
-    padding-top: 19px;
-    padding-bottom: 18px;
+    width: 100%;
+    padding-top: 13px;
+    padding-bottom: 8px;
+    display: flex;
+    min-width: 1160px;
+    max-width: 1800px;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .page-header__container {
     padding: 0;
+    min-width: 257px;
+    max-width: 300px;
+    width: 20%;
   }
+
   .page-header__logo {
-    margin-right: 34px;
+    margin-right: auto;
+  }
+
+  .page-header__lang-menu {
+    margin-right: 0;
   }
 }

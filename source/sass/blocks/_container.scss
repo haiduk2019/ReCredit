@@ -1,0 +1,57 @@
+.container {
+  width: 372px;
+  margin: 0 auto;
+
+  &--account {
+    margin: 0 auto;
+    width: 389px;
+  }
+
+  &--reference-info {
+    width: 398px;
+  }
+
+  &--about-company {
+    width: 412px;
+  }
+
+  &--get-loan {
+    width: 389px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 684px;
+
+    &--account {
+      width: 684px;
+    }
+
+    &--about-company {
+      width: 768px;
+    }
+
+    &--get-loan {
+      width: 583px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1164px;
+
+    &--account {
+      width: 778px;
+    }
+
+    &--about-company {
+      width: 100%;
+    }
+
+    &--get-loan {
+      width: 583px;
+    }
+  }
+}

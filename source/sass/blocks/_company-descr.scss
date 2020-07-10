@@ -48,16 +48,17 @@
 
 @media (min-width: $desktop-width) {
   .company-descr {
-    background: url("../img/animation-bg.png") top left  no-repeat #ffd13e;
+    background: url("../img/animation-bg.png") top left no-repeat #ffd13e;
+
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/animation-bg@2x.png") top left  no-repeat #ffd13e;
+      background-image: url("../img/animation-bg@2x.png") top left no-repeat #ffd13e;
     }
   }
 
   .company-descr__wrapper {
-   margin-right: 155px;
-   margin-left: 58px;
-   justify-content: space-between;
+    margin-right: 155px;
+    margin-left: 58px;
+    justify-content: space-between;
     align-items: center;
   }
 

@@ -1,7 +1,6 @@
 .site-list__item {
-  border-bottom: 1px solid #F5F5F5;
+  border-bottom: 1px solid #f5f5f5;
   text-align: center;
-
 }
 
 .site-list__link {
@@ -9,4 +8,142 @@
   color: #949494;
   padding: 13px 20px 18px 20px;
   display: block;
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    /*     min-width: 607px;
+    max-width: 1135px;
+    width: 60%; */
+    width: 100%;
+    position: relative;
+    z-index: 500;
+  }
+
+  .site-list__item {
+    border-bottom: none;
+    padding-right: 40px;
+
+    &:last-of-type {
+      padding-right: 0;
+    }
+  }
+
+  .site-list__link {
+    @include font-Roboto(16px, 21px, 500);
+    color: #000000;
+    padding: 0;
+    white-space: nowrap;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  #more-nav {
+    display: block;
+    position: relative;
+    z-index: 500;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    /*   display: flex;
+    align-items: center; */
+  }
+
+  #more-nav:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #more-nav > li {
+    display: block;
+    position: relative;
+    float: left;
+  }
+  #more-nav > li a {
+    display: block;
+    white-space: nowrap;
+  }
+
+  /*   #more-nav > li:hover > a,
+  #more-nav > li a:hover {
+    background: #ffffff;
+  } */
+  #more-nav > li > ul {
+    /*     display: flex;
+    align-items: flex-start;
+    flex-direction: column; */
+  }
+
+  .site-list--more-nav {
+    display: block;
+    position: absolute;
+
+    width: 263px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   /*  margin-top: 14px; */
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 10px;
+    background: #404041;
+    li {
+      border-bottom: 1px solid #585858;
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+
+    a {
+      display: block;
+      color: #f9f9f9;
+      text-align: left;
+      padding-left: 30px;
+      padding-top: 16px;
+      padding-bottom: 15px;
+      font-weight: 400;
+    }
+  }
+
+  #more-nav > li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .site-list__more {
+    margin-top: 10px;
+    margin-bottom: 14px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ffc200;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease;
+
+    &:hover {
+      background-color: #ffc200;
+    }
+
+    span {
+      width: 4px;
+      height: 4px;
+      background-color: #404041;
+      border-radius: 50%;
+      margin-right: 3px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
 }

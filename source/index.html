@@ -24,7 +24,6 @@
           <div class="lang-menu__item lang-menu__item--active">Ru</div>
           <div class="lang-menu__item">Ua</div>
         </div>
-
       </div>
 
       <nav class="page-header__main-nav main-nav js-main-nav main-nav--nojs">
@@ -40,7 +39,7 @@
             </a>
           </li>
         </ul>
-        <ul class="main-nav__list site-list">
+        <ul id="more-nav" class="main-nav__list site-list js-site-list">
           <li class="site-list__item">
             <a href="get-loan.html" class="site-list__link">
               Получить кредит
@@ -87,7 +86,13 @@
   </header>
 
   <main class="page-main">
+    <h1 class="visually-hidden">
+      ReCredit: главная страница
+    </h1>
     <section class="promo">
+      <h2 class="visually-hidden">
+        Информация о ReCredit
+      </h2>
       <div class="container">
         <div class="promo__wrapper">
           <section class="promo__features credit-features">
@@ -119,7 +124,10 @@
           </section>
 
           <section class="promo__range credit-range">
-            <form action="" class="credit-range__slider credit-calculate">
+            <h2 class="visually-hidden">
+              Рассчитать сумму платежа и возврата
+            </h2>
+            <form action="#" class="credit-range__slider credit-calculate">
               <div class="credit-calculate__slider">
                 <h3 class="credit-calculate__title">Выберите сумму</h3>
                 <div class="credit-calculate__content">

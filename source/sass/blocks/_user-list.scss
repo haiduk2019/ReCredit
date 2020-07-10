@@ -1,6 +1,6 @@
 .user-list {
-  border-top: 1px solid #F5F5F5;
-  border-bottom: 1px solid #F5F5F5;
+  border-top: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
   padding: 20px;
   padding-bottom: 18px;
   margin: 0 auto;
@@ -10,4 +10,14 @@
 .user-list__link {
   width: 166px;
   margin: 0 auto;
+}
+
+@media (min-width: $desktop-width) {
+  .user-list {
+    order: 2;
+    padding: 0;
+    margin-right: 0;
+    margin-left: auto;
+    border: none;
+  }
 }

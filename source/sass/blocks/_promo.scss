@@ -1,10 +1,10 @@
 .promo {
-  background: url("../img/main-bg-mob.png") center (center / cover) no-repeat #FFD13E;
+  background: url("../img/main-bg-mob.png") center (center / cover) no-repeat #ffd13e;
   padding-top: 50px;
   padding-bottom: 15px;
 
   @media (min-resolution: $retina-dppx) {
-    background-image: url("../img/main-bg-mob@2x.png") center (center / cover) no-repeat #FFD13E;
+    background-image: url("../img/main-bg-mob@2x.png") center (center / cover) no-repeat #ffd13e;
   }
 }
 
@@ -14,14 +14,14 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    background: url("../img/main-bg-tab.png") center (center / cover) no-repeat #FFD13E;
+    background: url("../img/main-bg-tab.png") center (center / cover) no-repeat #ffd13e;
     padding: 50px 0 27px 0;
 
-
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/main-bg-tab@2x.png") center (center / cover) no-repeat #FFD13E;
+      background-image: url("../img/main-bg-tab@2x.png") center (center / cover) no-repeat #ffd13e;
     }
   }
+
   .promo__wrapper {
     display: flex;
     justify-content: space-between;
@@ -36,12 +36,11 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    background: url("../img/main-bg-desk.jpg") center (center / cover) no-repeat #FFD13E;
+    background: url("../img/main-bg-desk.jpg") center (center / cover) no-repeat #ffd13e;
     padding: 158px 0 73px 0;
 
-
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/main-bg-desk@2x.jpg") center (center / cover) no-repeat #FFD13E;
+      background-image: url("../img/main-bg-desk@2x.jpg") center (center / cover) no-repeat #ffd13e;
     }
   }
 

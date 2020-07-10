@@ -3,6 +3,7 @@
   border-radius: 10px;
   padding: 18px 40px 13px 13px;
   margin-bottom: 10px;
+
   &:last-of-type {
     margin-bottom: 0;
   }
@@ -11,19 +12,19 @@
 
 .reference-container__check-mark {
   position: absolute;
-    width: 12px;
-    height: 12px;
-    border-left: 2px solid #ffc200;
-    border-bottom: 2px solid #ffc200;
-    transform: translateY(-50%) rotate(-45deg);
-    right: 13px;//Change on --active, do center align when no active
-    top: 50%;
-    transition: 0.4s ease;
+  width: 12px;
+  height: 12px;
+  border-left: 2px solid #ffc200;
+  border-bottom: 2px solid #ffc200;
+  transform: translateY(-50%) rotate(-45deg);
+  right: 13px; //Change on --active, do center align when no active
+  top: 50%;
+  transition: 0.4s ease;
 }
 
 .reference-container__check-mark--active {
   transform: rotate(137deg);
-  right: 13px;//Change on --active, do center align when no active
+  right: 13px; //Change on --active, do center align when no active
   top: 28px;
 }
 
@@ -33,25 +34,25 @@
 }
 
 .reference-container__answer {
-  display: none;
   @include font-Roboto(14px, 24px, 300);
+  display: none;
   color: #585858;
   margin-top: 14px;
   margin-bottom: 23px;
   transition: 0.4s ease;
+
   &--active {
     display: block;
   }
-
 }
 
 @media (min-width: $tablet-width) {
-  .reference-container{
+  .reference-container {
     padding: 13px 49px 2px 32px;
   }
 
   .reference-container__check-mark {
-     right: 20px;
+    right: 20px;
   }
 
   .reference-container--active::before {

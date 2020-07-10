@@ -3,25 +3,24 @@
   justify-content: center;
 }
 
-.breadcrumbs__item  {
+.breadcrumbs__item {
   padding-right: 25px;
   position: relative;
 
   &:last-of-type {
     padding-right: 0;
   }
-&::after {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 1px;
-  background-color: #DCDCDC;
-  top: 50%;
-  transform: translateX(-50%);
-  right: 2px;
 
-}
-
+  &::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    background-color: #dcdcdc;
+    top: 50%;
+    transform: translateX(-50%);
+    right: 2px;
+  }
 }
 
 .breadcrumbs__item:last-of-type::after {
@@ -30,6 +29,5 @@
 
 .breadcrumbs__link {
   @include font-Roboto(14px, 14px, 400);
-  color: #DCDCDC;
-
+  color: #dcdcdc;
 }

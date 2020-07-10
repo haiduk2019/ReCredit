@@ -2,6 +2,7 @@
   border-radius: 21px;
   box-shadow: 0 3px 20px rgba(180, 96, 0, 0.73);
   width: 372px;
+
   &--getting-info {
     box-shadow: none;
     border: 1px solid #ffc200;
@@ -14,12 +15,14 @@
   padding-top: 32px;
   border-top-left-radius: 21px;
   border-top-right-radius: 21px;
+
   &--getting-info {
-    background-color: #fff;
+    background-color: #ffffff;
   }
+
   &--get-loan {
     padding: 31px 0 31px 0;
-    border-top: 1px solid #DCDCDC;
+    border-top: 1px solid #dcdcdc;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
@@ -29,6 +32,7 @@
   @include font-Montserrat(16px, 16px, 700);
   color: #f9f9f9;
   margin-bottom: 9px;
+
   &--getting-info {
     color: #404041;
     margin-bottom: 10px;
@@ -45,14 +49,12 @@
   text-align: center;
   padding: 21px 0 0 0;
   margin-bottom: 17px;
+
   &--getting-info {
-    background-color: #fff;
+    background-color: #ffffff;
     border-color: #dcdcdc;
     margin-bottom: 13px;
   }
- /*  &--get-loan {
-    width: ;
-  } */
 }
 
 .credit-calculate__ranges {
@@ -92,6 +94,7 @@
 .credit-calculate__payment {
   @include font-Roboto(13px, 28px, 400);
   color: #a8a8a8;
+
   span {
     color: #585858;
     font-weight: 700;
@@ -102,6 +105,7 @@
   @include font-Roboto(17px, 28px, 400);
   color: #585858;
   margin-bottom: 31px;
+
   span {
     font-weight: 700;
     color: #404041;
@@ -139,6 +143,7 @@
   @include font-Roboto(20px, 20px, 400);
   color: #f9f9f9;
   margin-bottom: 18px;
+
   &--getting-info {
     color: #404041;
   }
@@ -146,6 +151,7 @@
 
 .credit-calculate__content--period {
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -169,8 +175,9 @@
   border: none;
   outline: none;
   color: #2e2e2e;
+
   &--getting-info {
-    color: #fff;
+    color: #ffffff;
   }
 }
 
@@ -178,6 +185,7 @@
   position: absolute;
   height: 3px;
   width: 100%;
+
   div {
     width: 1px;
     height: 3px;
@@ -188,12 +196,15 @@
     &:nth-of-type(1) {
       left: 0;
     }
+
     &:nth-of-type(2) {
       left: 33.3%;
     }
+
     &:nth-of-type(3) {
       left: 66.6%;
     }
+
     &:nth-of-type(4) {
       left: 100%;
     }
@@ -245,9 +256,11 @@
   .credit-calculate {
     width: 388px;
   }
+
   .credit-calculate__payment {
     font-size: 14px;
     line-height: 30px;
+
     &--getting-info {
       font-size: 14px;
       line-height: 30px;
@@ -262,7 +275,6 @@
 
   .credit-calculate__btn {
     width: 289px;
-
   }
 
   .credit-calculate__btn.credit-calculate__btn--getting-info {

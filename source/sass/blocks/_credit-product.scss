@@ -26,6 +26,7 @@
   text-align: center;
   margin-bottom: 15px;
   position: relative;
+
   span {
     @include font-Montserrat(30px, 28px, 700);
     color: #262626;
@@ -58,22 +59,23 @@
 }
 
 .credit-product__getting {
+  @include font-Roboto(14px, 20px, 400);
   padding-top: 19px;
   padding-bottom: 16px;
   border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
-  @include font-Roboto(14px, 20px, 400);
   color: #585858;
+
   span {
     font-weight: 700;
   }
 }
 
 .credit-product__link {
+  @include font-Roboto(16px, 16px, 500);
   display: block;
   width: 196px;
   margin: 20px auto 30px;
-  @include font-Roboto(16px, 16px, 500);
   color: #262626;
   padding-top: 18px;
   padding-bottom: 16px;
@@ -100,8 +102,8 @@
     }
 
     span {
-      margin-right: 11px;
       @include font-Roboto(18px, 18px, 400);
+      margin-right: 11px;
       color: #0997e1;
     }
 
@@ -114,17 +116,18 @@
 @media (min-width: $tablet-width) {
   .credit-product__wrapper--online {
     position: relative;
+
     &::after {
       position: absolute;
       content: "";
       width: 1px;
       height: 630px;
-      background-color: #ECECEC;
+      background-color: #ececec;
       top: 0;
       right: -38px;
-
     }
   }
+
   .credit-product__toggle {
     display: none;
 
@@ -162,6 +165,7 @@
 
   .credit-product {
     width: 342px;
+
     &:first-of-type {
       padding-right: 38px;
     }
@@ -175,6 +179,7 @@
 @media (min-width: $desktop-width) {
   .credit-product {
     width: 537px;
+
     &:first-of-type {
       padding-right: 45px;
     }
@@ -186,6 +191,7 @@
 
   .credit-product__title {
     margin-bottom: 55px;
+
     &::after {
       top: 100px;
     }
@@ -205,11 +211,9 @@
   }
 
   .credit-product__wrapper--online {
-
     &::after {
       height: 645px;
       right: -45px;
-
     }
   }
 }

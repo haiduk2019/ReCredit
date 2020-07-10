@@ -1,5 +1,5 @@
 .page-footer--grey {
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
 }
 
 .page-footer__wrapper {
@@ -8,9 +8,9 @@
 }
 
 .page-footer__container {
-&:first-of-type {
-  display: none;
-}
+  &:first-of-type {
+    display: none;
+  }
 }
 
 .page-footer__copyright {
@@ -30,12 +30,15 @@
     padding-top: 52px;
     padding-bottom: 54px;
   }
+
   .page-footer__container {
     display: flex;
+
     &:first-of-type {
       display: none;
     }
   }
+
   .page-footer__copyright {
     padding-top: 17px;
     padding-bottom: 16px;
@@ -49,7 +52,6 @@
   }
 
   .page-footer__container {
-
     &:first-of-type {
       display: flex;
       margin-right: 144px;

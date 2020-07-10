@@ -38,7 +38,7 @@
             </a>
           </li>
         </ul>
-        <ul class="main-nav__list site-list">
+        <ul id="more-nav" class="main-nav__list site-list js-site-list">
           <li class="site-list__item">
             <a href="get-loan.html" class="site-list__link">
               Получить кредит
@@ -65,7 +65,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link">
+            <a class="site-list__link white-btn">
               О компании
             </a>
           </li>
@@ -104,42 +104,81 @@
         </h1>
       </div>
       <section class="about-company__descr company-descr">
+        <h2 class="visually-hidden">
+          Описание компании ReCredit
+        </h2>
         <div class="container container--about-company">
           <div class="company-descr__wrapper">
             <ul class="company-descr__list">
               <li class="company-descr__item">
-                <img src="./img/animation-1.jpg" alt="animation">
+                <picture>
+                  <source type="image/webp" srcset="./img/animation-1.webp 1x, ./img/animation-1@2x.webp 2x">
+                  <img src="./img/animation-1.jpg" srcset="./img/animation-1@2x.jpg 2x" alt="animation" width="137"
+                    height="137">
+                </picture>
               </li>
               <li class="company-descr__item">
-                <img src="./img/animation-2.jpg" alt="animation">
+                <picture>
+                  <source type="image/webp" srcset="./img/animation-2.webp 1x, ./img/animation-2@2x.webp 2x">
+                  <img src="./img/animation-2.jpg" srcset="./img/animation-2@2x.jpg 2x" alt="animation" width="137"
+                    height="137">
+                </picture>
               </li>
               <li class="company-descr__item">
-                <img src="./img/animation-3.jpg" alt="animation">
+                <picture>
+                  <source type="image/webp" srcset="./img/animation-3.webp 1x, ./img/animation-3@2x.webp 2x">
+                  <img src="./img/animation-3.jpg" srcset="./img/animation-3@2x.jpg 2x" alt="animation" width="137"
+                    height="137">
+                </picture>
               </li>
               <li class="company-descr__item">
-                <img src="./img/animation-4.jpg" alt="animation">
+                <picture>
+                  <source type="image/webp" srcset="./img/animation-4.webp 1x, ./img/animation-4@2x.webp 2x">
+                  <img src="./img/animation-4.jpg" srcset="./img/animation-4@2x.jpg 2x" alt="animation" width="137"
+                    height="137">
+                </picture>
               </li>
               <li class="company-descr__item">
-                <img src="./img/animation-5.jpg" alt="animation">
+                <picture>
+                  <source type="image/webp" srcset="./img/animation-5.webp 1x, ./img/animation-5@2x.webp 2x">
+                  <img src="./img/animation-5.jpg" srcset="./img/animation-5@2x.jpg 2x" alt="animation" width="137"
+                    height="137">
+                </picture>
               </li>
               <li class="company-descr__item">
-                <img src="./img/animation-6.jpg" alt="animation">
+                <picture>
+                  <source type="image/webp" srcset="./img/animation-6.webp 1x, ./img/animation-6@2x.webp 2x">
+                  <img src="./img/animation-6.jpg" srcset="./img/animation-6@2x.jpg 2x" alt="animation" width="137"
+                    height="137">
+                </picture>
               </li>
               <li class="company-descr__item">
-                <img src="./img/animation-7.jpg" alt="animation">
+                <picture>
+                  <source type="image/webp" srcset="./img/animation-7.webp 1x, ./img/animation-7@2x.webp 2x">
+                  <img src="./img/animation-7.jpg" srcset="./img/animation-7@2x.jpg 2x" alt="animation" width="137"
+                    height="137">
+                </picture>
               </li>
               <li class="company-descr__item">
-                <img src="./img/animation-8.jpg" alt="animation">
+                <picture>
+                  <source type="image/webp" srcset="./img/animation-8.webp 1x, ./img/animation-8@2x.webp 2x">
+                  <img src="./img/animation-8.jpg" srcset="./img/animation-8@2x.jpg 2x" alt="animation" width="137"
+                    height="137">
+                </picture>
               </li>
               <li class="company-descr__item">
-                <img src="./img/animation-9.jpg" alt="animation">
+                <picture>
+                  <source type="image/webp" srcset="./img/animation-9.webp 1x, ./img/animation-9@2x.webp 2x">
+                  <img src="./img/animation-9.jpg" srcset="./img/animation-9@2x.jpg 2x" alt="animation" width="137"
+                    height="137">
+                </picture>
               </li>
             </ul>
-
             <p class="company-descr__text">
               ReCredit (ООО «Кредитсервис») - единственная в Украине&nbsp;компания, которая специализируется на
               рефинансировании
-              микрозаймов с общей задолженностью&nbsp;до 100000 грн. Вы также можете оформить кредит на любые другие цели:
+              микрозаймов с общей задолженностью&nbsp;до 100000 грн. Вы также можете оформить кредит на любые другие
+              цели:
               ремонт, лечение, покупку товаров, автомобиля, поддержку бизнеса.
             </p>
           </div>
@@ -329,7 +368,7 @@
             </h3>
             <ul class="info__list">
               <li class="info__item">
-                <a  class="info__link">
+                <a class="info__link">
                   О компании
                 </a>
               </li>

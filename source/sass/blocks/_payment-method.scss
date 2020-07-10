@@ -51,13 +51,12 @@
 }
 
 .payment-method__arrow {
-    display: none;
-  }
+  display: none;
+}
 
 .payment-method__toggle--active .payment-method__arrow {
   display: block;
 }
-
 
 @media (min-width: $tablet-width) {
   .payment-method {

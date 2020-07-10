@@ -1,6 +1,6 @@
 .white-btn {
-  display: block;
   @include font-Roboto(16px, 16px, 500);
+  display: block;
   color: #262626;
   padding: 16px;
   border: 1px solid #ffc200;
@@ -35,7 +35,7 @@
 
   &:hover,
   &:focus {
-    background-color: #FFD13E;
+    background-color: #ffd13e;
   }
 
   &:active {

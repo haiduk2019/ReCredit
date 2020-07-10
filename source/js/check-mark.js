@@ -9,19 +9,17 @@ checkMark.on('click', function () {
 var conditionsBtn = $('.js-display-toggle');
 
 conditionsBtn.on('click', function () {
-  var hiddenBtn =  $(this).siblings('.js-display-toggle:hidden');
+  var hiddenBtn = $(this).siblings('.js-display-toggle:hidden');
   $(this).css('display', 'none');
   hiddenBtn.css('display', 'flex');
   // $(this).siblings('.js-conditions').toggleClass('credit-product__wrapper--hidden');
   var conditions = $(this).siblings('.js-conditions');
-  if(conditions.is(":visible")) {
+  if (conditions.is(":visible")) {
     conditions.hide(1000);
   } else {
     conditions.show(1000);
   }
   //  conditions.css('display', 'block');
-//   $(this).css('display', 'none');
-//  hideConditions.css('display', 'flex');
+  //   $(this).css('display', 'none');
+  //  hideConditions.css('display', 'flex');
 });
-
-

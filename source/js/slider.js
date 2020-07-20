@@ -1,22 +1,36 @@
-$(document).ready(function () {
-  var calculateRange = $(".credit-calculate__range");
-  var value = calculateRange.data('value');
+
+  const calculateRange = $(".credit-calculate__range");
+  const value = calculateRange.data('value');
+  const select = $(".js-credit-select");
+  const period = $(".js-credit-calculate__period");
+  const creditCalculateAmount = $(".credit-calculate__amount");
+  const slider = $(".js-select-slider");
+
+
   calculateRange.slider({
     range: "min",
     value: value,
     min: 10000,
     max: 100000,
     slide: function (event, ui) {
-      $(".credit-calculate__amount").text(ui.value + " грн");
+      creditCalculateAmount.text(ui.value + " грн");
     }
   });
-  $(".credit-calculate__amount").text($(".credit-calculate__range").slider("value") + " грн");
-});
+  creditCalculateAmount.text(calculateRange.slider("value") + " грн");
 
 
-$(document).ready(function () {
-  var select = $(".js-credit-select");
-  var slider = $("<div id='slider'></div>").insertAfter(select).slider({
+  select.selectmenu({
+    icons: {
+       button: "my-test-class"
+    },
+
+    classes: {
+      "ui-selectmenu-button": "credit-calculate__select",
+      "ui-selectmenu-menu": "highlight"
+    }
+  })
+  // ui-selectmenu-button
+  slider.slider({
     min: 3,
     max: 12,
     step: 3,
@@ -24,16 +38,15 @@ $(document).ready(function () {
     value: select.val(),
     slide: function (event, ui) {
       // select[ 0 ].selectedIndex = ui.value - 1;
-      $('.js-credit-calculate__period').text(ui.value + ' мес');
+      period.text(ui.value + ' мес');
     }
   });
 
   select.on("change", function () {
-    $('.js-credit-calculate__period').text(this.value + ' мес');
+    period.text(this.value + ' мес');
     slider.slider("value", this.value);
   });
 
-});
 ////
 
 

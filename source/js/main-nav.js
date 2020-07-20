@@ -32,12 +32,12 @@ payToggle.on('click', function () {
 // $('input[name=phone-field]').mask("+3 (999) 999-99-99");
 
 
-$(function () {
-  //задание заполнителя с помощью параметра placeholder
-  $('input[name=phone-field]').mask("+38 (999) 999-99-99");
-  /*   $('input[name=sms-code-field]').mask("9 9 9 9"); */
-  /* $.mask.definitions['~'] = '[+ -]';
-  $('input[name=sms-code-field]').mask("~ 9.99 ~ 9.99 999"); */
-  $('input[name=sms-code-field]').mask("9 9 9 9");
+// $(function () {
+//   //задание заполнителя с помощью параметра placeholder
+//   $('input[name=phone-field]').mask("+38 (999) 999-99-99");
+//   /*   $('input[name=sms-code-field]').mask("9 9 9 9"); */
+//   /* $.mask.definitions['~'] = '[+ -]';
+//   $('input[name=sms-code-field]').mask("~ 9.99 ~ 9.99 999"); */
+//   $('input[name=sms-code-field]').mask("9 9 9 9");
 
-});
+// });

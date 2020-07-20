@@ -8,6 +8,8 @@
 
 .lang-menu__item {
   @include font-Roboto(12px, 21px, 500);
+  display: block;
+  cursor: pointer;
   color: #404041;
   border-bottom: 1px solid #707070;
 

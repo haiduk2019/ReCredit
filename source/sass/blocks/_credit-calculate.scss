@@ -25,6 +25,7 @@
     border-top: 1px solid #dcdcdc;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    position: relative;
   }
 }
 
@@ -47,13 +48,18 @@
   background-color: #2e2e2e;
   border: 1px solid #585858;
   text-align: center;
-  padding: 21px 0 0 0;
+  padding: 18px 0 0 0;
   margin-bottom: 17px;
 
   &--getting-info {
     background-color: #ffffff;
     border-color: #dcdcdc;
     margin-bottom: 13px;
+  }
+
+  &--period {
+    padding: 0;
+    position: relative;
   }
 }
 
@@ -150,38 +156,16 @@
   }
 }
 
-.credit-calculate__content--period {
-  position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    border-left: 2px solid #ffc200;
-    border-bottom: 2px solid #ffc200;
-    transform: rotate(-45deg);
-    right: 16px;
-    top: 20px;
+.credit-calculate__content--index span.credit-calculate__select.ui-button {
+  color: #F9F9F9;
+  border-color: #585858;
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: #585858;
   }
 }
-
-// .credit-calculate__select {
-//   cursor: pointer;
-//   background: none;
-//   position: absolute;
-//   top: 0;
-//   width: 100%;
-//   height: 100%;
-//   left: 0;
-//   border: none;
-//   outline: none;
-//   color: #2e2e2e;
-
-//   &--getting-info {
-//     color: #ffffff;
-//   }
-// }
 
 span.credit-calculate__select.ui-button {
   @include font-Roboto(20px, 20px, 400);
@@ -190,10 +174,11 @@ span.credit-calculate__select.ui-button {
   text-align: center;
   color: #404041;
   width: 100%;
-  border: 1px solid #dcdcdc;
+  border-color: #dcdcdc;
   border-radius: 0;
-  padding: 16px 0 18px 0;
+  padding: 19px 0 19px 0;
   position: relative;
+  margin: 0;
 
   &::before {
     content: "";
@@ -223,44 +208,36 @@ span.credit-calculate__select.ui-button {
   margin-right: 0;
 }
 
-.highlight.ui-selectmenu-menu {
+.term__wrapper.ui-selectmenu-menu {
+  //обертка для списка сроков кредита wrapper ul
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-.highlight.ui-selectmenu-menu .ui-menu-item {
+.term__wrapper.ui-selectmenu-menu .ui-menu {
+  padding: 0;
+}
+
+.term__wrapper.ui-selectmenu-menu .ui-menu-item {
+  //ячейка со сроком кредита item div
   div {
     @include font-Roboto(20px, 20px, 400);
+    border: none;
     border-bottom: 1px solid #e9e9e9;
     padding: 19px 20px 18px 20px;
     text-align: center;
+    margin: 0;
 
     &:hover,
     &:focus {
       outline: none;
-      background: #FFD13E;
-      border-color: #FFD13E;
+      background: #ffd13e;
+      border-color: #ffd13e;
     }
-
-    // &:last-of-type {
-    //   border-bottom: none;
-    // }
   }
-   &:last-of-type div {
-      border-bottom: none;
-    }
+  &:last-of-type div {
+    border-bottom: none;
+  }
 }
-
-/* .ui-menu-item .ui-menu-item-wrapper {
-  outline: none;
-  border: none;
-  padding: 0;
-  &:hover,
-  &:focus {
-    outline: none;
-    background: #FFD13E;
-    border-color: #FFD13E;
-  }
-} */
 
 .credit-calculate__separator {
   position: absolute;

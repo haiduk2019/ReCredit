@@ -26,9 +26,13 @@
 
     classes: {
       "ui-selectmenu-button": "credit-calculate__select",
-      "ui-selectmenu-menu": "highlight"
+      "ui-selectmenu-menu": "term__wrapper"
+    },
+    change: function( event, ui ) {
+      slider.slider("value", ui.item.value);
     }
-  })
+
+  });
   // ui-selectmenu-button
   slider.slider({
     min: 3,
@@ -37,15 +41,10 @@
     range: "min",
     value: select.val(),
     slide: function (event, ui) {
-      // select[ 0 ].selectedIndex = ui.value - 1;
-      period.text(ui.value + ' мес');
+      select.val(ui.value).selectmenu( "refresh" );
     }
   });
 
-  select.on("change", function () {
-    period.text(this.value + ' мес');
-    slider.slider("value", this.value);
-  });
 
 ////
 

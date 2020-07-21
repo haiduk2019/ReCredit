@@ -139,14 +139,23 @@
                 </div>
 
                 <h3 class="credit-calculate__title">На какой срок</h3>
-                <div class="credit-calculate__content credit-calculate__content--period">
+                <div
+                class="credit-calculate__content credit-calculate__content--period credit-calculate__content--index"><!-- credit-calculate__content--getting-info  -->
+                <select class="credit-calculate__select credit-calculate__select--getting-info js-credit-select">
+                  <option value="3" selected>3 мес</option>
+                  <option value="6">6 мес</option>
+                  <option value="9">9 мес</option>
+                  <option value="12">12 мес</option>
+                </select>
+                <div class='js-select-slider'></div>
+               <!--  <div class="credit-calculate__content credit-calculate__content--period">
                   <div class="credit-calculate__period js-credit-calculate__period">12 мес</div>
                   <select class="credit-calculate__select js-credit-select">
                     <option value="3">3</option>
                     <option value="6">6</option>
                     <option value="9">9</option>
                     <option value="12" selected>12</option>
-                  </select>
+                  </select> -->
                   <div class="credit-calculate__separator">
                     <div></div>
                     <div></div>

@@ -2,6 +2,29 @@
   padding-top: 69px;
   padding-bottom: 61px;
   background-color: #f9f9f9;
+
+  li {
+    @include font-Roboto(18px, 24px, 700);
+    color: #585858;
+    margin-bottom: 24px;
+    padding-left: 32px;
+    position: relative;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      border: 2px solid #ffd13e;
+      left: 0;
+      top: 5px;
+    }
+  }
 }
 
 .company-benefits__img {
@@ -19,28 +42,28 @@
   margin-bottom: 28px;
 }
 
-.company-benefits__item {
-  @include font-Roboto(18px, 24px, 700);
-  color: #585858;
-  margin-bottom: 24px;
-  padding-left: 32px;
-  position: relative;
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    border: 2px solid #ffd13e;
-    left: 0;
-    top: 5px;
-  }
-}
+//.company-benefits__item {
+//  @include font-Roboto(18px, 24px, 700);
+//  color: #585858;
+//  margin-bottom: 24px;
+//  padding-left: 32px;
+//  position: relative;
+//
+//  &:last-of-type {
+//    margin-bottom: 0;
+//  }
+//
+//  &::before {
+//    position: absolute;
+//    content: "";
+//    width: 13px;
+//    height: 13px;
+//    border-radius: 50%;
+//    border: 2px solid #ffd13e;
+//    left: 0;
+//    top: 5px;
+//  }
+//}
 
 @media (min-width: $tablet-width) {
   .company-benefits {
@@ -78,6 +101,10 @@
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/company-benefits-bg-desk@2x.png") center (center/cover) no-repeat #f9f9f9;
     }
+
+    li {
+      font-size: 20px;
+    }
   }
 
   .company-benefits__img {
@@ -94,9 +121,9 @@
     margin-bottom: 38px;
   }
 
-  .company-benefits__item {
-    font-size: 20px;
-  }
+  //.company-benefits__item {
+  //  font-size: 20px;
+  //}
 
   .company-benefits__container {
     width: 517px;

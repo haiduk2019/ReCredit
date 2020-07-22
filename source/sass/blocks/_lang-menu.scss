@@ -20,6 +20,10 @@
   &--active {
     color: #a8a8a8;
   }
+
+  a {
+    color: #404041;
+  }
 }
 
 @media (min-width: $desktop-width) {

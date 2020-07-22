@@ -17,7 +17,7 @@ const config = {
         filename: '[name].js',
         chunkFilename: '[name].[contenthash].bundle.js',
         path: path.resolve(__dirname, 'build'),
-        publicPath: '/build/'
+        publicPath: '/front/build/'
 
     },
     // watch: devMode,

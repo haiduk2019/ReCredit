@@ -1,6 +1,7 @@
 $.fn.moreNav = function () {
   var nav = $(this);
 
+
   function setMoreNav(flag) {
 
     var nav_width = nav.outerWidth(),
@@ -18,7 +19,7 @@ $.fn.moreNav = function () {
     }
 
     if (nav.find('.js-more').length > 0) {
-      // nav.append(nav.find('.js-more ul li'));
+      nav.append(nav.find('.js-more ul li'));
       nav.find('.js-more').remove();
     }
 
@@ -52,13 +53,18 @@ $.fn.moreNav = function () {
     more_link.find('ul').append($('.' + class_nav_item_more));
 
   }
-  setMoreNav(window.innerWidth >= 1280);
-  setMoreNav(window.innerWidth >= 1280);
+
+ setTimeout(()=> { setMoreNav(window.innerWidth >= 1280)}, 0);
   $(window).resize(function () {
     setMoreNav(window.innerWidth >= 1280);
   });
 };
 
+const siteList = $('.js-site-list');
+
 if (window.innerWidth >= 1280) {
-  $('.js-site-list').moreNav();
+    siteList.moreNav();
 }
+
+siteList.removeClass('menu-overflow');
+

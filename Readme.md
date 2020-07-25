@@ -11,8 +11,8 @@
 2. Устанавливаем зависимости: 
  npm install
 3. Запускаем проект: 
- npm run start
- npm run build (production)
+ - npm run start (рабочая версия); 
+ - npm run build (версия для production);
 3. Проверяем на ошибки:
  npm test
 

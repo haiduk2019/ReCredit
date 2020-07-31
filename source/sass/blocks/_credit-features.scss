@@ -13,22 +13,24 @@
   }
 }
 
-.credit-features__item {
-  @include font-Roboto(16px, 30px, 500);
-  color: #404041;
-  padding-left: 34px;
-  position: relative;
+.main-features {
+  li {
+    @include font-Roboto(16px, 30px, 500);
+    color: #404041;
+    padding-left: 34px;
+    position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 12px;
-    height: 8px;
-    border-left: 2px solid #ffffff;
-    border-bottom: 2px solid #ffffff;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%) rotate(-45deg);
+    &::before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 8px;
+      border-left: 2px solid #ffffff;
+      border-bottom: 2px solid #ffffff;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%) rotate(-45deg);
+    }
   }
 }
 

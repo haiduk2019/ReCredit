@@ -16,7 +16,7 @@
   }
 }
 
-.info__item {
+.info__list {
   @include footer-text;
   color: #585858;
 
@@ -33,12 +33,14 @@
 }
 
 .info__phone {
-  @include font-Montserrat(24px, 31px, 700);
-  color: #404041;
+  a {
+    @include font-Montserrat(24px, 31px, 700);
+    color: #404041;
 
-  &--connection {
-    font-size: 18px;
-    line-height: 33px;
+    &--connection {
+      font-size: 18px;
+      line-height: 33px;
+    }
   }
 }
 
@@ -118,8 +120,10 @@
   }
 
   .info__phone {
-    font-size: 18px;
-    line-height: 27px;
+    a {
+      font-size: 18px;
+      line-height: 27px;
+    }
   }
 
   .info__item--phone,

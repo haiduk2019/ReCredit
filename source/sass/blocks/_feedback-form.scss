@@ -15,9 +15,9 @@
   padding: 21px 19px 20px 19px;
   outline: none;
 
-  &:last-of-type {
-    margin-bottom: 0;
-  }
+  //&:last-of-type {
+  //  margin-bottom: 0;
+  //}
 
   &::placeholder {
     @include font-Roboto(16px, 16px, 400);

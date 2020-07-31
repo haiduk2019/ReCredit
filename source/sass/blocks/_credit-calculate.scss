@@ -28,6 +28,27 @@
     position: relative;
   }
 }
+.credit-calculate__slider-white {
+  .credit-calculate__slider {
+    background-color: #ffffff;
+  }
+  .credit-calculate__content {
+    color: #404041;
+    background-color: #ffffff;
+    border-color: #dcdcdc;
+    margin-bottom: 13px;
+  }
+  .credit-calculate__title {
+    color: #404041;
+    margin-bottom: 10px;
+  }
+  .credit-calculate__amount {
+    color: #404041;
+  }
+  .credit-calculate__select {
+    color: #404041 !important;
+  }
+}
 
 .credit-calculate__title {
   @include font-Montserrat(16px, 16px, 700);

@@ -3,7 +3,8 @@ const value = calculateRange.data('value');
 const select = $(".js-credit-select");
 const period = $(".js-credit-calculate__period");
 const creditCalculateAmount = $(".credit-calculate__amount");
-const creditCalculateAmountInput = $("#calc_amount");
+// const creditCalculateAmountInput = $("#calc_amount");
+const creditCalculateAmountInput = $(".calc-amount");
 const slider = $(".js-select-slider");
 
 

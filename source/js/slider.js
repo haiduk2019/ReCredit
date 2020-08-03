@@ -12,6 +12,7 @@ calculateRange.slider({
   value: value,
   min: 10000,
   max: 100000,
+  step: 500,
   slide: function (event, ui) {
     creditCalculateAmount.text(ui.value + " грн");
     creditCalculateAmountInput.val(ui.value);

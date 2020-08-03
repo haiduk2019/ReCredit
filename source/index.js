@@ -5,4 +5,4 @@ function importAll(r) {
 }
 
 importAll(require.context('./js', true, /\.js$/));
-importAll(require.context('./img', true, /\.(jpe?g|png|gif|svg|webp)$/));
+importAll(require.context('./img', true, /\.(jpe?g|png|gif|svg|webp|webmanifest|ico|xml)$/));

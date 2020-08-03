@@ -10,6 +10,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="apple-touch-icon" sizes="152x152" href="/build/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/build/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/build/img/favicon-16x16.png">
+  <link rel="shortcut icon" href="/build/img/favicon-ico.ico" type="image/x-icon">
+  <link rel="manifest" href="/build/img/site.webmanifest">
+  <link rel="mask-icon" href="/build/img/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -72,10 +80,19 @@
               </label>
             </div>
             <div class="get-loan__field get-loan__field--employment">
-              <input class="get-loan__input" type="text" id="user-employment" name="user-employment-field" required>
-              <label class="get-loan__label" for="user-employment">
-                Трудоустройство
-              </label>
+              <div
+              class="credit-calculate__content  credit-calculate__content--choice  credit-calculate__content--getting-info credit-calculate__content--period">
+              <select class="credit-calculate__select credit-calculate__select--getting-info js-select" placeholder="Трудоустройство">
+                <option value="Предприниматель">Предприниматель</option>
+                <option value="Работаю неофициально">Работаю неофициально</option>
+                <option value="Пенсионер">Пенсионер</option>
+                <option value="Временно неработающий">Временно неработающий</option>
+                <option value="Студент">Студент</option>
+                <option value="В декретном отпуске">В декретном отпуске</option>
+                <option value="Прочее">Прочее</option>
+                <option value="Указать свой вариант">Указать свой вариант</option>
+              </select>
+              </div>
             </div>
             <div
               class="credit-calculate__slider credit-calculate__slider--getting-info credit-calculate__slider--get-loan">
@@ -121,11 +138,24 @@
             </div>
 
             <div class="get-loan__field">
-              <input class="get-loan__input get-loan__input--loan-purpose" type="text" id="user-loan-purpose"
+           <!--    <input class="get-loan__input get-loan__input--loan-purpose" type="text" id="user-loan-purpose"
                 name="user-loan-purpose-field" required><br>
               <label class="get-loan__label" for="user-loan-purpose">
                 Цель кредита
-              </label>
+              </label> -->
+              <div
+              class="credit-calculate__content  credit-calculate__content--choice  credit-calculate__content--getting-info credit-calculate__content--period">
+              <select class="credit-calculate__select credit-calculate__select--getting-info js-select" placeholder="Цель кредита">
+                <option value="Рефинансирование микрозаймов">Рефинансирование микрозаймов</option>
+                <option value="На ремонт">На ремонт</option>
+                <option value="Пенсионер">Пенсионер</option>
+                <option value="На бизнес">На бизнес</option>
+                <option value="На покупки">На покупки</option>
+                <option value="На автомобиль">На автомобиль</option>
+                <option value="Прочее">Прочее</option>
+                <option value="Указать свой вариант">Указать свой вариант</option>
+              </select>
+              </div>
             </div>
             <input class="get-loan__checkinput visually-hidden" type="checkbox" name="user-confirm-field"
               id="user-confirm">

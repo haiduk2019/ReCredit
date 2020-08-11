@@ -37,6 +37,10 @@
     background-color: #ffffff;
     border-color: #dcdcdc;
     margin-bottom: 13px;
+
+    #calc_amount, .calc-amount {
+      color: #404041;
+    }
   }
   .credit-calculate__title {
     color: #404041;
@@ -68,9 +72,26 @@
 .credit-calculate__content {
   background-color: #2e2e2e;
   border: 1px solid #585858;
-  text-align: center;
+  //text-align: center;
   padding: 18px 0 0 0;
   margin-bottom: 17px;
+  @include font-Roboto(20px, 20px, 400);
+  color: #f9f9f9;
+  margin-bottom: 18px;
+
+  #calc_amount, .calc-amount {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #f9f9f9;
+    margin-bottom: 18px;
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: right;
+    width: 50%;
+  }
 
   &--getting-info {
     background-color: #ffffff;

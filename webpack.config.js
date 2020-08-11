@@ -49,7 +49,7 @@ const config = {
             },
         },
             {
-              test: /\.(webp|png|jpg|jpeg|svg|gif)$/,
+              test: /\.(webp|png|jpg|jpeg|svg|gif|webmanifest|ico|xml)$/,
                 use: {
                     loader: "file-loader",
                     options: {

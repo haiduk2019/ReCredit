@@ -36,13 +36,31 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    background: url("../img/main-bg-desk.jpg") center (center / cover) no-repeat #ffd13e;
+  /*   background: url("../img/main-bg-desk.jpg") center (center / cover) no-repeat #ffd13e; */
     padding: 158px 0 73px 0;
+    background-color: #ffd13e;
+    background-image: url("../img/main-bg-girl.png"), url("../img/main-bg.png");
+    background-size: 489px 694px, cover;
+    background-repeat: no-repeat;
+    background-position: center bottom, center;
 
-    @media (min-resolution: $retina-dppx) {
+  /*   @media (min-resolution: $retina-dppx) {
       background-image: url("../img/main-bg-desk@2x.jpg") center (center / cover) no-repeat #ffd13e;
-    }
+    } */
   }
+
+
+ /*  .main-background {
+    width: 1200px;
+    height: 508px;
+    background-color: #c8cfd4;
+    background-image: url("../img/polygon.svg"), url("../img/main-background.jpg");
+    background-size: 1201px 59px, 1200px 800px;
+    background-repeat: no-repeat;
+    background-position: center 450px, center -80px;
+    margin-top: 0;
+    display: block;
+  } */
 
   .promo__wrapper {
     margin-bottom: 19px;

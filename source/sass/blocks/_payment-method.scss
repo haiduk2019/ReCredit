@@ -15,7 +15,7 @@
 .payment-method__text {
   @include font-Roboto(14px, 18px, 400);
   color: #404041;
-  width: 222px;
+  width: 90%;
   margin-bottom: 8px;
 
   a {
@@ -62,8 +62,8 @@
   .payment-method {
     flex-direction: column;
     min-height: 251px;
-    width: 251px;
-    margin-right: 30px;
+    width: 200px;
+    margin-right: 15px;
     padding: 0;
     padding-top: 40px;
     padding-bottom: 18px;
@@ -102,14 +102,14 @@
 
 @media (min-width: $desktop-width) {
   .payment-method {
-    margin-right: 40px;
+    margin-right: 20px;
     margin-bottom: 0;
 
     &:nth-of-type(2n) {
       margin-right: 40px;
     }
 
-    &:nth-of-type(4n) {
+    &:last-child {
       margin-right: 0;
     }
   }

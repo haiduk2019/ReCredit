@@ -1,4 +1,4 @@
-let container = $('.company-descr__list');
+let container = $('#about_animation');
 
 setInterval(function () {
   $('li img', container).each(function (event, el) {

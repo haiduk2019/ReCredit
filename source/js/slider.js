@@ -1,10 +1,10 @@
 const calculateRange = $(".credit-calculate__range");
-const value = calculateRange.data('value');
 const select = $(".js-credit-select");
 const period = $(".js-credit-calculate__period");
 const creditCalculateAmount = $(".credit-calculate__amount");
 // const creditCalculateAmountInput = $("#calc_amount");
 const creditCalculateAmountInput = $(".calc-amount");
+const value = creditCalculateAmountInput.val();
 const slider = $(".js-select-slider");
 
 
@@ -21,6 +21,7 @@ calculateRange.slider({
   }
 });
 creditCalculateAmount.text(calculateRange.slider("value") + " грн");
+calculateRange.change();
 
 
 select.selectmenu({

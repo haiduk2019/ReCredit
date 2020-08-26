@@ -4,12 +4,14 @@
 
 .credit-features__title {
   @include font-Montserrat(38px, 46px, 800);
-  text-transform: uppercase;
   color: #262626;
   margin-bottom: 19px;
 
   span {
     font-weight: 400;
+  }
+  span.promo-percent {
+    font-size: 28px;
   }
 }
 

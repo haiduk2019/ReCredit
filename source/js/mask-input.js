@@ -13,4 +13,4 @@ if(pinInput) {
  */
 
 $('.phone-mask').mask("+38 (999) 999-99-99");
-$('input[name=sms-code-field]').mask("9 9 9 9");
+$('input.sms-4digit-input').mask("9 9 9 9");

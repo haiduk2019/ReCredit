@@ -5,10 +5,18 @@ const creditCalculateAmount = $(".credit-calculate__amount");
 const creditCalculateAmountInput = $(".calc-amount");
 const value = creditCalculateAmountInput.val();
 const slider = $(".js-select-slider");
+const calcForm = $('.credit-calculator');
 
 creditCalculateAmountInput.on('keyup', function () {
   let value = $(this).val();
   let amount = limitAmount(value);
+  calc(amount, select.val());
+  calculateRange.slider("value", value);
+});
+calcForm.on('submit', function (){
+  let value = creditCalculateAmountInput.val();
+  let amount = limitAmount(value);
+  creditCalculateAmountInput.val(amount);
   calc(amount, select.val());
   calculateRange.slider("value", value);
 });

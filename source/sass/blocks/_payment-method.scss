@@ -76,10 +76,10 @@
     align-items: center;
     margin-bottom: 30px;
 
-    &:nth-last-of-type(1),
-    &:nth-last-of-type(2) {
-      margin-bottom: 0;
-    }
+    //&:nth-last-of-type(1),
+    //&:nth-last-of-type(2) {
+    //  margin-bottom: 0;
+    //}
 
     .payment-method-link {
       padding-top: 40px;

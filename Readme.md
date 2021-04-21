@@ -1,19 +1,10 @@
-﻿
+﻿# Project «ReCredit» 
+  
+  Website for obtaining a loan online
 
-Сайт ReCredit для получения кредита (мобильная, планшетная, десктопная версия).
+- [DEMO LINK](https://recredit.ua/ru)
+- Tech stack: HTML5, SCSS, JS, BEM methodology, jQuery
+- Responsive design
 
-Ссылка на проект: https://haiduk2019.github.io/ReCredit/build/index.html
-
-Скопировать проект:
-
-1. Клонируем репозиторий на свой компьютер:
- git clone SSH-адрес_проекта
-2. Устанавливаем зависимости: 
- npm install
-3. Запускаем проект: 
- - npm run start (рабочая версия); 
- - npm run build (версия для production);
-3. Проверяем на ошибки:
- npm test
 
 
